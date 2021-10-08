@@ -17,6 +17,199 @@
 
 <body>
 
+  <!-- MENU -->
+  <div class="hidden fixed h-screen inset-0 z-50 bg-black bg-opacity-50">
+    <div class="h-full bg-gray-100 py-2 px-7 ml-auto w-80 flex flex-col justify-between overflow-y-scroll xl:overflow-hidden">
+      <div>
+
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="rounded-2xl p-3 pr-5 bg-bg-black flex items-center justify-between">
+            <img src="assets/images/user-default.svg" class="mr-3 rounded-full object-cover">
+            <div class="w-full flex items-center justify-between">
+              <span class="font-semibold text-white">Javier A.</span>
+              <img class="cursor-pointer" src="assets/icons/drop-down-white.svg">
+            </div>
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7">
+            <span class="block">Editar perfil</span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="flex items-center justify-between">
+              <span>Credenciales</span>
+              <span class="h-6 w-6 rounded-full flex items-center justify-center bg-red-500 text-white font-bold">
+                1
+              </span>
+            </span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="block">Mis pedidos</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="border-b-2 shadow-sm rounded-2xl py-6 px-7 pr-4 text-sm font-semibold bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Moneda:</span>
+            <div class="w-full flex items-center justify-between">
+              <span class="font-semibold text-main-red">Dólares (USD)</span>
+              <img class="cursor-pointer" src="assets/icons/drop-down-gray.svg">
+            </div>
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7 pr-4">
+            <span class="flex items-center">
+              <img class="mr-5" src="assets/icons/bandera-usa.svg">
+              <div class="flex justify-between w-full">
+                <span>
+                  <span class="block text-sm font-semibold text-black">Dólares (USD)</span>
+                  <span class="text-xs font-normal">Compra: 4.09 Venta: 4.10</span>
+                </span>
+                <img class="cursor-pointer" src="assets/icons/check.svg">
+              </div>
+            </span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="flex items-center">
+              <img class="mr-5" src="assets/icons/bandera-peru.svg">
+              <span>Soles (PEN)</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hidden rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="border-b-2 shadow-sm rounded-2xl py-6 px-7 pr-4 text-sm bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Nuestros Servicios</span>
+            <img class="cursor-pointer" src="assets/icons/drop-down-gray.svg">
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7">
+            <span class="block">Servicio Courier</span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="block">Servicio Shopper</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="py-6 px-7 pr-4 text-sm bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Tracking</span>
+            <img class="cursor-pointer" src="assets/icons/drop-right-gray.svg">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex items-center gap-5 p-4 xl:mb-6 cursor-pointer bg-main-red text-white rounded-2xl">
+        <img src="assets/icons/cerrar-sesion-white.svg">
+        <span class="font-medium">Cerrar Sesión</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN -->
+  <div class="fixed h-screen inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-gray-100 px-8 grid items-center justify-center w-full h-full xl:w-auto xl:h-auto xl:py-24 xl:px-32 xl:rounded-2xl relative">
+      <div>
+      <h2 class="text-4xl text-center font-semibold mb-2">Iniciar sesión</h2>
+      <p class="mb-6 text-center">con tu cuenta para continuar...</p>
+      <div class="grid grid-cols-2 items-center gap-4">
+        <a href="#" class="flex items-center justify-center gap-4 py-4 px-14 border-2 border-gray-300 bg-white rounded-2xl">
+          <img src="assets/icons/google-login.svg" alt="Google">
+          <span class="text-sm font-semibold">GOOGLE</span>
+        </a>
+        <a href="#" class="flex items-center justify-center gap-4 py-4 px-14 border-2 border-blue-600 bg-blue-600 text-white rounded-2xl">
+          <img src="assets/icons/facebook-login.svg" alt="Facebook">
+          <span class="text-sm font-semibold">FACEBOOK</span>
+        </a>
+      </div>
+      <div class="my-6 flex items-center gap-4">
+        <hr class="w-full">
+        <span class="h-4 w-8 rounded-full border-2 border-gray-400"></span>
+        <hr class="w-full">
+      </div>
+      <form action="" class="">
+        <!-- USUARIO -->
+        <label class="relative grid items-center mb-3">
+          <input class="pl-20 py-6 input w-full text-xs sm:text-sm font-medium bg-white border shadow-sm rounded-2xl" type="text" placeholder="Ingresa usuario">
+          <div class="absolute left-5 inset-y-0 flex items-center text-gray-400">
+            <img class="inline cursor-pointer" src="assets/icons/user-login.svg" alt="User">
+          </div>
+        </label>
+        <!-- CONTRASEÑA -->
+        <label class="relative grid items-center mb-6">
+          <input class="pl-20 py-6 input w-full text-xs sm:text-sm font-medium bg-white border shadow-sm rounded-2xl" type="password" placeholder="Ingresa contraseña">
+          <div class="absolute right-5 inset-y-0 flex items-center text-gray-400">
+            <img class="inline cursor-pointer" src="assets/icons/watch.svg" alt="User">
+          </div>
+          <div class="absolute left-5 inset-y-0 flex items-center text-gray-400">
+            <img class="inline cursor-pointer" src="assets/icons/password-logn.svg" alt="User">
+          </div>
+        </label>
+        <!-- CHECKBOX -->
+        <div class="mb-12 sm:mb-6 w-10/12 mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-6">
+            <div class="h-5 w-5 rounded-sm border-2 border-main-red cursor-pointer flex items-center justify-center" style="padding: 3px; padding-left: 2px; padding-right: 2px;">
+              <span class="h-full w-full bg-main-red rounded-sm"></span>
+            </div>
+            <span class="text-xs sm:text-sm">Recordarme</span>
+          </div>
+          <a href="#" class="text-main-red text-xs sm:text-sm">Olvidé mi contraseña</a>
+        </div>
+        <!-- BUTTONS -->
+        <button class="btn bg-main-red text-white w-full py-5 mb-4 font-bold rounded-2xl">Iniciar Sesión</button>
+        <button class="btn border-2 border-main-red text-main-red w-full py-5 font-bold rounded-2xl">Registrarme</button>
+      </form>
+      </div>
+      <img class="absolute right-4 top-4 xl:right-10 xl:top-10 cursor-pointer" src="assets/icons/exit.svg" alt="Cerrar">
+    </div>
+  </div>
+  <!-- REGISTRO -->
+  <div class="hidden fixed h-screen inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-gray-100 px-8 grid items-center justify-center w-full h-full xl:w-auto xl:h-auto xl:py-24 xl:px-32 xl:rounded-2xl relative">
+      <div>
+      <h2 class="text-4xl text-center font-semibold mb-2">Registrarse</h2>
+      <p class="mb-6 text-center">con tu cuenta para continuar...</p>
+      <div class="grid grid-cols-2 items-center gap-4">
+        <a href="#" class="flex items-center justify-center gap-4 py-4 px-14 border-2 border-gray-300 bg-white rounded-2xl">
+          <img src="assets/icons/google-login.svg" alt="Google">
+          <span class="text-sm font-semibold">GOOGLE</span>
+        </a>
+        <a href="#" class="flex items-center justify-center gap-4 py-4 px-14 border-2 border-blue-600 bg-blue-600 text-white rounded-2xl">
+          <img src="assets/icons/facebook-login.svg" alt="Facebook">
+          <span class="text-sm font-semibold">FACEBOOK</span>
+        </a>
+      </div>
+      <div class="my-6 flex items-center gap-4">
+        <hr class="w-full">
+        <span class="h-4 w-8 rounded-full border-2 border-gray-400"></span>
+        <hr class="w-full">
+      </div>
+      <form action="" class="">
+        <!-- NOMBRE -->
+        <label class="relative grid items-center mb-5">
+          <input class="px-7 py-6 input w-full text-xs sm:text-sm font-semibold bg-white border shadow-sm rounded-2xl" type="text" placeholder="Ingresa tu nombre">
+          <span class="absolute -top-2 left-7 bg-gray-100 text-xs font-medium">Nombre</span>
+        </label>
+        <!-- APELLIDO -->
+        <label class="relative grid items-center mb-5">
+          <input class="px-7 py-6 input w-full text-xs sm:text-sm font-semibold bg-white border shadow-sm rounded-2xl" type="text" placeholder="Ingresa tu apellido">
+          <span class="absolute -top-2 left-7 bg-gray-100 text-xs font-medium">Apellido</span>
+        </label>
+        <!-- CORREO ELECTRÓNICO -->
+        <label class="relative grid items-center mb-5">
+          <input class="px-7 py-6 input w-full text-xs sm:text-sm font-semibold bg-white border shadow-sm rounded-2xl" type="text" placeholder="Ingresa tu correo electrónico">
+          <span class="absolute -top-2 left-7 bg-gray-100 text-xs font-medium">Correo Electrónico</span>
+        </label>
+        <!-- CONTRASEÑA -->
+        <label class="relative grid items-center mb-6">
+          <input class="px-7 py-6 input w-full text-xs sm:text-sm font-medium bg-white border shadow-sm rounded-2xl" type="password" placeholder="Ingresa contraseña">
+          <div class="absolute right-5 inset-y-0 flex items-center text-gray-400">
+            <img class="inline cursor-pointer" src="assets/icons/watch.svg" alt="User">
+          </div>
+          <span class="absolute -top-2 left-7 bg-gray-100 text-xs font-medium">Contraseña</span>
+        </label>
+        <!-- BUTTONS -->
+        <button class="btn bg-main-red text-white w-full py-5 mb-4 font-bold rounded-2xl">Crear cuenta</button>
+      </form>
+      </div>
+      <img class="absolute right-4 top-4 xl:right-10 xl:top-10 cursor-pointer" src="assets/icons/exit.svg" alt="Cerrar">
+    </div>
+  </div>
+
+
   <!-- HEADER -->
   <header class="u-container py-3 xl:py-5 flex items-center justify-between">
     <a href="#">
