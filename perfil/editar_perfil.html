@@ -18,7 +18,7 @@
 <body>
   <!-- HEADER -->
   <header class="u-container py-3 xl:py-5 flex items-center justify-between">
-    <a href="#">
+    <a href="#" class="hidden xl:block">
       <figure>
         <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
       </figure>
@@ -31,32 +31,172 @@
       <a href="#"
         class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
     </nav>
+
+    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
+    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
     <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
   </header>
 
-  <section class="bg-bgGray">
-    <div class="u-container grid grid-cols-12 gap-4">
-      <div class="col-span-3 bg-white rounded-2xl">
-        <div class="py-10">
+  <section class="bg-white xl:bg-bgGray">
+    <div class="u-container xl:grid grid-cols-12 gap-4 items-start">
+      <div class="col-span-3 bg-white rounded-2xl xl:shadow-sm">
+        <h3 class="xl:hidden text-4xl font-bold text-black mb-12">Editar Perfil</h3>
+        <div class="xl:py-10">
           <figure class="mx-auto w-48 relative">
             <img src="../assets/images/user-default.svg" class="object-cover w-full rounded-full shadow-md">
             <img src="../assets/icons/camara-circle.svg" class="absolute bottom-0 right-0 cursor-pointer">
           </figure>
         </div>
-        <div class="py-12 bg-bg-black rounded-2xl text-lg text-white font-bold">
+        <div class="hidden xl:block py-12 bg-bg-black rounded-2xl text-lg text-white font-bold">
           <a href="#" class="block py-5 hover:bg-main-red bg-main-red text-center mb-5 transition-colors">Editar Perfil</a>
           <a href="#" class="block py-5 hover:bg-main-red text-center mb-5 transition-colors">Credenciales</a>
           <a href="#" class="block py-5 hover:bg-main-red text-center transition-colors mb-44">Mis Pedidos</a>
         
-          <a href="#" class="flex items-center justify-center gap-5">
+          <a href="#" class="flex items-center justify-center gap-5 hover:bg-main-red py-4 mx-8 rounded-2xl transition-colors">
             <img src="../assets/icons/cerrar-sesion-white.svg">
             <span class="font-semibold">Cerrar Sesión</span>
           </a>
         </div>
       </div>
-      <div class="col-span-9 bg-white rounded-2xl">
-        <h1 class="text-6xl">FORM</h1>
-      </div>
+      <form class="col-span-9 xl:bg-sky rounded-2xl pt-16 xl:py-16 xl:px-28 xl:shadow-sm">
+        <div class="hidden xl:flex items-center justify-between mb-12">
+          <h3 class="text-4xl font-semibold">Editar Perfil</h3>
+          <button class="pt-5 pb-4 px-6 bg-main-green text-white font-bold rounded-2xl" type="submit">Guardar cambios</button>
+        </div>
+        <div class="xl:grid grid-cols-2 gap-8">
+          <div>
+            <!-- NOMBRES -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl"
+                type="text" value="Javier Juan">
+            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Nombres</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- NOMBRES -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="De la Cruz Fernandez">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Apellidos</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- DOCUMENTO -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="78002542">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Documento</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- TELEFONO -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="922329525">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Telefono</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- DIRECCIÓN -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="Av. Oválo Gutierrez 3025 ">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Dirección</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- # Piso u Oficina -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="1025 ">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium"># Piso u Oficina</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+            <!-- REFERENCIA -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="Frente al Banco BCP ">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Referencia</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+          </div>
+          <div>
+            <!-- Departamento -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="Lima">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Departamento</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/drop-down-gray.svg">
+              </div>
+
+              <!-- OPCIONES / DROP DOWN -->
+              <div class="hidden absolute z-10 inset-x-0 top-20 py-2 rounded-2xl bg-white border shadow-sm">
+                <span class="cursor-pointer block py-2 px-6 bg-gray-100 hover:bg-gray-100 font-medium text-sm">Lima</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Lima</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+              </div>
+            </label>
+
+            <!-- Provincia -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="Lima">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Provincia</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/drop-down-gray.svg">
+              </div>
+
+              <!-- OPCIONES / DROP DOWN -->
+              <div class="hidden absolute z-10 inset-x-0 top-20 py-2 rounded-2xl bg-white border shadow-sm">
+                <span class="cursor-pointer block py-2 px-6 bg-gray-100 hover:bg-gray-100 font-medium text-sm">Lima</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Lima</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+              </div>
+            </label>
+
+            <!-- Distrito -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="Ate">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Distrito</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/drop-down-gray.svg">
+              </div>
+
+              <!-- OPCIONES / DROP DOWN -->
+              <div class="hidden absolute z-10 inset-x-0 top-20 py-2 rounded-2xl bg-white border shadow-sm">
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Lima</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+                <span class="cursor-pointer block py-2 px-6 bg-gray-100  hover:bg-gray-100 font-medium text-sm">Ate</span>
+                <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Arequipa</span>
+              </div>
+            </label>
+
+            <!-- Correo electrónico -->
+            <label class="relative grid items-center mb-6">
+              <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+                value="usuario_01@gmail.com">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Correo electrónico</span>
+              <div class="absolute right-6 inset-y-0 flex items-center text-gray-400">
+                <img class="inline cursor-pointer" src="../assets/icons/lapiz.svg" alt="editar">
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="xl:hidden w-full mt-8 pt-5 pb-4 px-6 bg-main-green text-white text-center font-bold rounded-2xl" type="submit">Guardar cambios</button>
+      </form>
     </div>
   </section>
 

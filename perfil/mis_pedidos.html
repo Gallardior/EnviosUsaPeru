@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible|" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envios USA-Peru</title>
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="u-container py-3 xl:py-5 flex items-center justify-between">
+    <a href="#" class="hidden xl:block">
+      <figure>
+        <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
+      </figure>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-10">
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
+      <a href="#" class="font-medium text-black">Iniciar sesíon</a>
+      <a href="#"
+        class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
+    </nav>
+
+    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
+    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
+    <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
+  </header>
+
+  <section class="bg-white xl:bg-bgGray">
+    <div class="u-container xl:grid grid-cols-12 gap-4 items-start">
+      <div class="col-span-3 bg-white rounded-2xl xl:shadow-sm">
+        <h3 class="xl:hidden text-4xl font-bold text-black mb-12">Mis Pedidos</h3>
+        <div class="hidden xl:block xl:py-10">
+          <figure class="mx-auto w-48 relative">
+            <img src="../assets/images/user-default.svg" class="object-cover w-full rounded-full shadow-md">
+            <img src="../assets/icons/camara-circle.svg" class="absolute bottom-0 right-0 cursor-pointer">
+          </figure>
+        </div>
+        <div class="hidden xl:block py-12 bg-bg-black rounded-2xl text-lg text-white font-bold">
+          <a href="#" class="block py-5 hover:bg-main-red text-center mb-5 transition-colors">Editar
+            Perfil</a>
+          <a href="#" class="relative block py-5 hover:bg-main-red text-center mb-5 transition-colors">
+            Credenciales
+          </a>
+          <a href="#" class="block py-5 hover:bg-main-red bg-main-red text-center transition-colors mb-44">Mis Pedidos</a>
+
+          <a href="#"
+            class="flex items-center justify-center gap-5 hover:bg-main-red py-4 mx-8 rounded-2xl transition-colors">
+            <img src="../assets/icons/cerrar-sesion-white.svg">
+            <span class="font-semibold">Cerrar Sesión</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-span-9 xl:bg-sky rounded-2xl xl:py-16 xl:px-8 xl:shadow-sm">
+        <div class="hidden xl:flex items-center justify-between mb-12 ml-20">
+          <h3 class="text-4xl font-semibold">Mis Pedidos</h3>
+        </div>
+        <table class="table-auto w-full">
+          <thead class="hidden xl:table-header-group">
+            <tr class="bg-main-red text-white">
+              <th class="text-xs xl:text-sm px-2 py-4 xl:p-4 font-semibold rounded-tl-2xl rounded-bl-2xl">Item</th>
+              <th class="text-xs xl:text-sm px-2 py-4 xl:p-4 font-semibold">
+                <span class="hidden xl:table-cell">Descripción del Producto</span>
+                <span class="xl:hidden">Descripción</span>
+              </th>
+              <th class="hidden xl:block text-xs xl:text-sm px-2 py-4 xl:p-4 font-semibold">Fecha</th>
+              <th class="text-xs xl:text-sm px-2 py-4 xl:p-4 font-semibold">
+                <span class="hidden xl:table-cell">Costo total</span>
+                <span class="xl:hidden">Costo</span>
+              </th>
+              <th class="hidden xl:block text-xs xl:text-sm p-4 font-semibold">Estado</th>
+              <th class="text-xs xl:text-sm px-2 py-4 xl:p-4 font-semibold rounded-tr-2xl rounded-br-2xl"></th>
+            </tr>
+            <tr>
+              <th class="py-3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="shadow-sm px-1 py-4 pl-4 xl:pl-6 xl:p-4 font-bold text-lg xl:text-xl rounded-tl-2xl rounded-bl-2xl">
+                1
+              </td>
+              <td class="shadow-sm py-4 p-4">
+                <div class="flex gap-4 items-center">
+                  <figure class="hidden xl:flex items-center justify-center">
+                    <img class="w-20 object-cover" src="../assets/images/jordan-1.svg">
+                  </figure>
+                  <p class="text-sm font-medium">
+                    Nike Men's Air Force 1 High '07 LV8
+                  </p>
+                </div>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell text-center">
+                <span class="block text-gray-400 text-xs mb-1">Fecha de compra:</span>
+                <span class="block text-sm mb-1">28/09/2021</span>
+                <span class="block text-gray-400 text-xs mb-1">Fecha de entrega:</span>
+                <span class="block text-sm">14/10/2021</span>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell py-4 px-1 xl:p-4 text-center text-xs font-semibold">
+                USD 150.00
+              </td>
+              <td class="shadow-sm hidden xl:table-cell p-4 text-xs text-yellow-400 font-semibold">
+                En proceso
+              </td>
+              <td class="shadow-sm py-4 pl-1 pr-2 xl:p-4 rounded-tr-2xl rounded-br-2xl">
+                <div class="grid gap-3 justify-center">
+                  <a href="#" class="w-max py-2 px-4 bg-bg-black text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver tracking
+                  </a>
+                  <a href="#"
+                    class="w-max py-2 px-4 bg-main-red text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver detalles
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-3"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="shadow-sm px-1 py-4 pl-4 xl:pl-6 xl:p-4 font-bold text-lg xl:text-xl rounded-tl-2xl rounded-bl-2xl">
+                1
+              </td>
+              <td class="shadow-sm py-4 p-4">
+                <div class="flex gap-4 items-center">
+                  <figure class="hidden xl:flex items-center justify-center">
+                    <img class="w-20 object-cover" src="../assets/images/jordan-1.svg">
+                  </figure>
+                  <p class="text-sm font-medium">
+                    Nike Men's Air Force 1 High '07 LV8
+                  </p>
+                </div>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell text-center">
+                <span class="block text-gray-400 text-xs mb-1">Fecha de compra:</span>
+                <span class="block text-sm mb-1">28/09/2021</span>
+                <span class="block text-gray-400 text-xs mb-1">Fecha de entrega:</span>
+                <span class="block text-sm">14/10/2021</span>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell py-4 px-1 xl:p-4 text-center text-xs font-semibold">
+                USD 150.00
+              </td>
+              <td class="shadow-sm hidden xl:table-cell p-4 text-xs text-yellow-400 font-semibold">
+                En proceso
+              </td>
+              <td class="shadow-sm py-4 pl-1 pr-2 xl:p-4 rounded-tr-2xl rounded-br-2xl">
+                <div class="grid gap-3 justify-center">
+                  <a href="#" class="w-max py-2 px-4 bg-bg-black text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver tracking
+                  </a>
+                  <a href="#"
+                    class="w-max py-2 px-4 bg-main-red text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver detalles
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-3"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="shadow-sm px-1 py-4 pl-4 xl:pl-6 xl:p-4 font-bold text-lg xl:text-xl rounded-tl-2xl rounded-bl-2xl">
+                1
+              </td>
+              <td class="shadow-sm py-4 p-4">
+                <div class="flex gap-4 items-center">
+                  <figure class="hidden xl:flex items-center justify-center">
+                    <img class="w-20 object-cover" src="../assets/images/jordan-1.svg">
+                  </figure>
+                  <p class="text-sm font-medium">
+                    Nike Men's Air Force 1 High '07 LV8
+                  </p>
+                </div>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell text-center">
+                <span class="block text-gray-400 text-xs mb-1">Fecha de compra:</span>
+                <span class="block text-sm mb-1">28/09/2021</span>
+                <span class="block text-gray-400 text-xs mb-1">Fecha de entrega:</span>
+                <span class="block text-sm">14/10/2021</span>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell py-4 px-1 xl:p-4 text-center text-xs font-semibold">
+                USD 150.00
+              </td>
+              <td class="shadow-sm hidden xl:table-cell p-4 text-xs text-green-400 font-semibold">
+                Finalizado
+              </td>
+              <td class="shadow-sm py-4 pl-1 pr-2 xl:p-4 rounded-tr-2xl rounded-br-2xl">
+                <div class="grid gap-3 justify-center">
+                  <a href="#" class="w-max py-2 px-4 bg-bg-black text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver tracking
+                  </a>
+                  <a href="#"
+                    class="w-max py-2 px-4 bg-main-red text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver detalles
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-3"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="shadow-sm px-1 py-4 pl-4 xl:pl-6 xl:p-4 font-bold text-lg xl:text-xl rounded-tl-2xl rounded-bl-2xl">
+                1
+              </td>
+              <td class="shadow-sm py-4 p-4">
+                <div class="flex gap-4 items-center">
+                  <figure class="hidden xl:flex items-center justify-center">
+                    <img class="w-20 object-cover" src="../assets/images/jordan-1.svg">
+                  </figure>
+                  <p class="text-sm font-medium">
+                    Nike Men's Air Force 1 High '07 LV8
+                  </p>
+                </div>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell text-center">
+                <span class="block text-gray-400 text-xs mb-1">Fecha de compra:</span>
+                <span class="block text-sm mb-1">28/09/2021</span>
+                <span class="block text-gray-400 text-xs mb-1">Fecha de entrega:</span>
+                <span class="block text-sm">14/10/2021</span>
+              </td>
+              <td class="shadow-sm hidden xl:table-cell py-4 px-1 xl:p-4 text-center text-xs font-semibold">
+                USD 150.00
+              </td>
+              <td class="shadow-sm hidden xl:table-cell p-4 text-xs text-green-400 font-semibold">
+                Finalizado
+              </td>
+              <td class="shadow-sm py-4 pl-1 pr-2 xl:p-4 rounded-tr-2xl rounded-br-2xl">
+                <div class="grid gap-3 justify-center">
+                  <a href="#" class="w-max py-2 px-4 bg-bg-black text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver tracking
+                  </a>
+                  <a href="#"
+                    class="w-max py-2 px-4 bg-main-red text-white rounded-2xl text-sm font-semibold text-center">
+                    Ver detalles
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-3"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mt-6 flex justify-end items-center gap-12">
+          <p>
+            Pág. <span class="mx-3 py-1 px-3 ring ring-blue-300">1</span> de 10
+          </p>
+          <div class="flex items-center gap-4">
+            <figure class="cursor-pointer p-3 rounded-full bg-white shadow-md">
+              <img src="../assets/icons/arrow-left-bold.svg">
+            </figure>
+            <figure class="cursor-pointer p-3 rounded-full bg-white shadow-md">
+              <img src="../assets/icons/arrow-right-bold.svg">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-bg-black xl:bg-bgGray text-white xl:text-textColor">
+    <div class="u-container xl:grid grid-cols-4">
+      <div class="mb-14 xl:hidden">
+        <p class="mb-5">Centro de ayuda</p>
+        <p class="mb-5">Sobre nosotros</p>
+        <p class="mb-5">Beneficios comunitarios</p>
+        <p>+ Ver más</p>
+      </div>
+      <div class="col-span-2">
+        <img class="hidden xl:block mb-10" src="../assets/LOGO.svg">
+        <h2 class="text-xl font-bold xl:hidden mb-8">EnvíosUsaPerú</h2>
+        <ul class="mb-6 xl:mb-12">
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/ubicacion.svg">
+            <img class="xl:hidden" src="../assets/icons/ubicacion--white.svg">
+            <span>Jr. Emilio Althaus Nro. 121 Int. 403</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/email.svg">
+            <img class="xl:hidden" src="../assets/icons/email--white.svg">
+            <span>admin@sendibox.com</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium">
+            <img class="hidden xl:block" src="../assets/icons/telefono.svg">
+            <img class="xl:hidden" src="../assets/icons/telefono--white.svg">
+            <span>(+51) 987 294 960</span>
+          </li>
+        </ul>
+        <div class="hidden xl:flex gap-6 mb-6">
+          <img src="../assets/icons/twitter-circle.svg">
+          <img src="../assets/icons/linkedin-circle.svg">
+          <img src="../assets/icons/instagram-circle.svg">
+          <img src="../assets/icons/facebook-circle.svg">
+          <img src="../assets/icons/youtube-circle.svg">
+        </div>
+        <small class="block text-gray-400 mb-10 xl:mb-0">©2021EnvíosUsaPerú</small>
+        <div class="flex gap-6 items-center justify-center xl:hidden">
+          <img src="../assets/icons/twitter--white.svg">
+          <img src="../assets/icons/linkedin--white.svg">
+          <img src="../assets/icons/instagram--white.svg">
+          <img src="../assets/icons/facebook--white.svg">
+          <img src="../assets/icons/youtube--white.svg">
+        </div>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

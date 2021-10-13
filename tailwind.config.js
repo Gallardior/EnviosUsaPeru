@@ -17,6 +17,7 @@ module.exports = {
         'main-green': '#5BC43A',
         'main-gray': '#4F5665',
         'bg-black': '#0B132A',
+        'sky': '#FAFDFF',
         // 'mainGreen': '#15BDB1',
         // 'mainGreenLight': '#5BC43A',
         // 'mainRed': '#FF535A',
