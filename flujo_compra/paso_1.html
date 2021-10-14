@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible|" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envios USA-Peru</title>
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="u-container py-3 xl:py-5 flex items-center justify-between">
+    <a href="#" class="hidden xl:block">
+      <figure>
+        <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
+      </figure>
+    </a>
+  
+    <nav class="hidden xl:flex items-center gap-10">
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
+      <a href="#" class="font-medium text-black">Iniciar sesíon</a>
+      <a href="#"
+        class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
+    </nav>
+
+    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
+    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
+    <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
+  </header>
+
+  <!-- TIPO DE MONEDA -->
+  <div class="bg-bg-black text-white">
+    <div class="u-container p-3 flex items-center justify-end gap-4">
+      <span class="">Tipo de moneda:</span>
+      <div class="relative flex items-center gap-3 font-semibold cursor-pointer">
+        <span>Dólares</span>
+        <img class="mb-1" src="../assets/icons/drop-down-white.svg">
+
+        <!-- OPCIONES / DROP DOWN -->
+        <div class="absolute text-textColor z-10 w-max -right-2 top-8 py-2 rounded-2xl bg-white border shadow-sm">
+          <span class="cursor-pointer block py-2 px-6 bg-gray-100 hover:bg-gray-100 font-medium text-sm">Dólares</span>
+          <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Soles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="u-container py-14 grid grid-cols-2 gap-8">
+    <div>
+      <h3 class="font-semibold text-xl mb-3">Detalles de producto</h3>
+      <p class="leading-8 mb-5">
+        Toda esta información nos ayudará a conocer más acerca del producto que estas deseando comprar. Completa la siguiente
+        información
+      </p>
+      <div class="border shadow-lg rounded-2xl overflow-hidden mb-10">
+        <p class="px-6 py-3 text-white font-semibold mb-6 bg-main-red">
+          Ingresa el link del producto
+        </p>
+        <label class="relative block mb-6 px-6">
+          <input class="px-6 py-4 border focus:border-blue-400 rounded-2xl w-full transition-colors" type="text" placeholder="www.tienda.com/producto">
+          <div class="absolute right-12 inset-y-0 flex items-center">
+            <img class="inline cursor-pointer" src="../assets/icons/buscar.svg">
+          </div>
+        </label>
+      </div>
+
+      <div class="border shadow-lg rounded-2xl">
+        <div class="rounded-tl-2xl rounded-tr-2xl overflow-hidden text-white font-semibold mb-9 grid grid-cols-4">
+          <div class="pl-4 py-3 cursor-pointer bg-main-red hover:bg-main-red transition-colors">
+            <span class="font-bold text-3xl block">1</span>
+            <span class="font-bold text-xs">Detalles del producto</span>
+          </div>
+          <div class="px-4 py-3 cursor-pointer bg-gray-400 hover:bg-main-red transition-colors">
+            <span class="font-bold text-3xl block">2</span>
+            <span class="font-bold text-xs">Dirección de entrega</span>
+          </div>
+          <div class="px-4 py-3 cursor-pointer bg-gray-400 hover:bg-main-red transition-colors">
+            <span class="font-bold text-3xl block">3</span>
+            <span class="font-bold text-xs">Métodos de pago</span>
+          </div>
+          <div class="px-4 py-3 cursor-pointer bg-gray-400 hover:bg-main-red transition-colors">
+            <span class="font-bold text-3xl block">4</span>
+            <span class="font-bold text-xs">Resumen</span>
+          </div>
+        </div>
+        <div class="px-9">
+          <h4 class="text-xl font-semibold mb-8">Detalles del producto</h4>
+          <label class="relative block mb-8">
+            <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
+              placeholder="Ingresa el nombre del producto">
+            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Nombre del producto</span>
+          </label>
+          <div class="relative block border shadow-sm rounded-2xl py-5 px-16 mb-16">
+            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Fotos referencial</span>
+            <img class="w-56 h-40 mx-auto cursor-pointer mb-4" src="../assets/images/tenis.svg">
+            <div class="flex items-center gap-8 justify-center mb-12">
+              <img class="w-16 h-12 cursor-pointer border-2 border-transparent hover:border-green-300 border-green-300 transition-all" src="../assets/images/tenis.svg">
+              <img class="w-16 h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all" src="../assets/images/tenis.svg">
+              <img class="w-16 h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all" src="../assets/images/tenis.svg">
+              <img class="w-16 h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all" src="../assets/images/tenis.svg">
+              <img class="w-16 h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all" src="../assets/images/tenis.svg">
+            </div>
+            <div class="absolute inset-x-0 -bottom-10 flex justify-center">
+              <div class="py-5 px-10 flex items-center gap-6 border-2 shadow-sm rounded-2xl bg-white">
+                <img class="cursor-pointer transform hover:scale-90 transition-all" src="../assets/icons/icon-restar.svg">
+                <input class="w-16 text-center font-semibold text-3xl" type="text" value="01">
+                <img class="cursor-pointer transform hover:scale-90 transition-all" src="../assets/icons/icon-sumar.svg">
+              </div>
+            </div>
+          </div>
+          <div class="mb-14">
+            <p class="font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 1</p>
+          </div>
+          <div class="mb-14">
+            <p class="font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 2</p>
+          </div>
+          <div class="mb-24">
+            <p class="font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 3</p>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="relative block mb-8">
+              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Precio referencial</span>
+              <div class="absolute left-6 inset-y-0 flex items-center font-bold text-main-red">
+                <span>USD</span>
+              </div>
+              <input 
+                class="pl-16 p-6 input w-full font-bold bg-white border shadow-sm rounded-2xl" 
+                type="text"
+                value="300.00"
+              >
+              <span class="absolute bottom-2 left-6 text-xs text-gray-400">Precio Max. USD 3000.00</span>
+              <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                <img src="../assets/icons/question.svg">
+              </div>
+            </label>
+            <label class="relative block mb-8">
+              <input 
+                class="p-6 input w-full font-bold bg-white border shadow-sm rounded-2xl" 
+                type="text"
+                value="1.16"
+              >
+              <div class="absolute right-6 inset-y-0 flex items-center font-bold">
+                <span class="cursor-pointer px-3 hover:text-main-red text-main-red transition-colors">kl</span>
+                <span class="cursor-pointer px-3 hover:text-main-red transition-colors border-l border-r">lb</span>
+                <span class="cursor-pointer px-3 hover:text-main-red transition-colors ">oz</span>
+              </div>
+            </label>
+          </div>
+          <label class="relative block mb-8">
+            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Categoría</span>
+            <input class="p-6 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text" placeholder="Elige una categoría">
+            <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+              <img src="../assets/icons/drop-down-black.svg">
+            </div>
+
+            <!-- OPCIONES / DROP DOWN -->
+            <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Celulares</span>
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Tabletas</span>
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Laptops</span>
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">E-reader</span>
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Camara y video</span>
+              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Drones</span>
+            </div>
+          </label>
+          <label class="relative block mb-8 border shadow-sm rounded-2xl">
+            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Nombre del producto</span>
+            <textarea class="w-full rounded-2xl focus:outline-none p-6 text-gray-400 resize-none" rows="3">Describe brevemente tu producto (Talla, tamaño, capacidad, color, etc.)</textarea>
+            <p class="font-bold text-sm mx-6 border-t pt-2 pb-4 border-gray-100">Ayúdanos a mejorar tu experiencia de compra</p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="border shadow-lg rounded-2xl py-8 px-10 cursor-pointer mb-8">
+        <h3 class="font-semibold text-xl mb-6">Tipo de servicio</h3>
+        <div class="border hover:border-main-green border-main-green rounded-2xl mb-6 transition-colors">
+          <div class="flex items-center px-6 py-7 rounded-2xl border-b border-main-green">
+            <div>
+              <div class="flex gap-3 mb-4">
+                <img src="../assets/icons/marcador.svg">
+                <div>
+                  <span class="font-bold text-sm block">Servicio Lite</span>
+                  <span class="font-medium text-xs">(Solo pagas el envío)</span>
+                </div>
+              </div>
+              <p class="font-medium leading-8">Compra en la tienda internacional de tu preferencia y envíala a la siguiente dirección.</p>
+            </div>
+            <div class="font-bold w-max text-main-green pl-6 pr-2">
+              <p class="w-max mb-5">USD 70.00</p>
+              <span class="block mx-auto w-4 h-4 rounded-full bg-main-green ring ring-offset-2 ring-main-green"></span>
+            </div>
+          </div>
+          <div class="px-6 py-4 leading-6 text-sm font-medium">
+            <span class="block">Joe Bidden</span>   
+            <span class="block">11751 SW 103RD LN</span>   
+            <span class="block">CODE 169</span>   
+            <span class="block">MIAMI, FL 33186-8537</span>   
+            <span class="block">Estados Unidos</span>   
+            <span class="block">Número de teléfono: 7862982107</span>   
+          </div>
+        </div>
+        <div class="border hover:border-main-green rounded-2xl transition-colors">
+          <div class="flex items-center px-6 py-7">
+            <div>
+              <div class="flex gap-3 mb-4">
+                <img src="../assets/icons/corona.svg">
+                <div>
+                  <span class="font-bold text-sm block">Servicio Premium</span>
+                  <span class="font-medium text-xs">(Nos encargamos de todo)</span>
+                </div>
+              </div>
+              <p class="font-medium leading-8">
+                Realizamos la compra y el envío desde USA,
+                hasta la entrega en la dirección final.
+              </p>
+            </div>
+            <div class="font-bold w-max pl-6 pr-2">
+              <p class="w-max mb-5">USD 150.00</p>
+              <span class="block mx-auto w-4 h-4 rounded-full bg-gray-400 ring ring-offset-2 ring-gray-400"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border shadow-lg rounded-2xl py-8 px-10 cursor-pointer">
+        <h3 class="font-semibold text-xl mb-6">Detalles de pago</h3>
+        <div class="border rounded-2xl">
+          <div class="text-gray-400 px-8 py-7">
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Envío a Perú</span>
+              <span>USD 20.00</span>
+            </p>
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Servicio</span>
+              <span>USD 22.04</span>
+            </p>
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Envío a nacional</span>
+              <span>USD 5.00</span>
+            </p>
+            <p class="text-main-green flex items-center justify-between font-semibold">
+              <span>Inpuestos</span>
+              <span>Gratis</span>
+            </p>
+            <hr class="my-6">
+            <p class="text-xl text-textColor flex items-center justify-between font-bold">
+              <span >Total a pagar</span>
+              <span>
+                <span class="text-main-red">USD</span>
+                377.67
+              </span>
+            </p>
+          </div>
+          <button class="block w-full bg-main-green text-lg font-bold text-white p-4 rounded-2xl">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-bg-black xl:bg-bgGray text-white xl:text-textColor">
+    <div class="u-container xl:grid grid-cols-4">
+      <div class="mb-14 xl:hidden">
+        <p class="mb-5">Centro de ayuda</p>
+        <p class="mb-5">Sobre nosotros</p>
+        <p class="mb-5">Beneficios comunitarios</p>
+        <p>+ Ver más</p>
+      </div>
+      <div class="col-span-2">
+        <img class="hidden xl:block mb-10" src="../assets/LOGO.svg">
+        <h2 class="text-xl font-bold xl:hidden mb-8">EnvíosUsaPerú</h2>
+        <ul class="mb-6 xl:mb-12">
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/ubicacion.svg">
+            <img class="xl:hidden" src="../assets/icons/ubicacion--white.svg">
+            <span>Jr. Emilio Althaus Nro. 121 Int. 403</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/email.svg">
+            <img class="xl:hidden" src="../assets/icons/email--white.svg">
+            <span>admin@sendibox.com</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium">
+            <img class="hidden xl:block" src="../assets/icons/telefono.svg">
+            <img class="xl:hidden" src="../assets/icons/telefono--white.svg">
+            <span>(+51) 987 294 960</span>
+          </li>
+        </ul>
+        <div class="hidden xl:flex gap-6 mb-6">
+          <img src="../assets/icons/twitter-circle.svg">
+          <img src="../assets/icons/linkedin-circle.svg">
+          <img src="../assets/icons/instagram-circle.svg">
+          <img src="../assets/icons/facebook-circle.svg">
+          <img src="../assets/icons/youtube-circle.svg">
+        </div>
+        <small class="block text-gray-400 mb-10 xl:mb-0">©2021EnvíosUsaPerú</small>
+        <div class="flex gap-6 items-center justify-center xl:hidden">
+          <img src="../assets/icons/twitter--white.svg">
+          <img src="../assets/icons/linkedin--white.svg">
+          <img src="../assets/icons/instagram--white.svg">
+          <img src="../assets/icons/facebook--white.svg">
+          <img src="../assets/icons/youtube--white.svg">
+        </div>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+    </div>
+  </footer>
+</body>
+  
+</html>
