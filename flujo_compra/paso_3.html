@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible|" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envios USA-Peru</title>
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="u-container py-3 xl:py-5 flex items-center justify-between">
+    <a href="#" class="hidden xl:block">
+      <figure>
+        <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
+      </figure>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-10">
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
+      <a href="#" class="font-medium text-black">Iniciar sesíon</a>
+      <a href="#"
+        class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
+    </nav>
+
+    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
+    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
+    <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
+  </header>
+
+  <!-- TIPO DE MONEDA -->
+  <div class="bg-bg-black text-white">
+    <div class="u-container p-3 flex items-center justify-center xl:justify-end gap-4">
+      <span class="">Tipo de moneda:</span>
+      <div class="relative flex items-center gap-3 font-semibold cursor-pointer">
+        <span>Dólares</span>
+        <img class="mb-1" src="../assets/icons/drop-down-white.svg">
+
+        <!-- OPCIONES / DROP DOWN -->
+        <div class="hidden absolute text-textColor z-10 w-max -right-2 top-8 py-2 rounded-2xl bg-white border shadow-sm">
+          <span class="cursor-pointer block py-2 px-6 bg-gray-100 hover:bg-gray-100 font-medium text-sm">Dólares</span>
+          <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Soles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="u-container py-14 grid xl:grid-cols-2 gap-8">
+    <!-- Bloque de la izquierda -->
+    <div>
+      <h3 class="font-semibold text-lg xl:text-xl mb-3">Métodos de pago</h3>
+      <p class="text-sm xl:text-base leading-6 xl:leading-8 mb-8 xl:mb-5">
+        En Envíos Usa Perú, te ofrecemos diversos métodos de pago para que tu puedas elegir la mejor opción de tu preferencia.
+      </p>
+
+      <!--Métodos de pago -->
+      <div class="xl:border xl:shadow-lg rounded-2xl">
+        <!-- Timeline -->
+        <div class="px-4 xl:px-0 text-white flex items-center w-full xl:rounded-tl-2xl xl:rounded-tr-2xl xl:overflow-hidden font-semibold mb-16 xl:mb-9 xl:grid xl:items-stretch	 grid-cols-4">
+          <div class="relative xl:pl-4 xl:py-3 cursor-pointer xl:bg-main-red xl:hover:bg-main-red transition-colors">
+            <span class="bg-main-red xl:bg-transparent w-7 xl:w-auto h-7 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">1</span>
+            <span class="font-bold text-xs hidden xl:block">Detalles del producto</span>
+            <span class="text-xs text-textColor absolute -bottom-6 -left-3">Producto</span>
+          </div>
+          <div class="bg-main-red w-full h-2 xl:hidden"></div>
+          <div class="relative xl:px-4 xl:py-3 cursor-pointer xl:bg-main-red xl:hover:bg-main-red transition-colors">
+            <span class="bg-main-red xl:bg-transparent w-7 xl:w-auto h-7 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">2</span>
+            <span class="font-bold text-xs hidden xl:block">Dirección de entrega</span>
+            <span class="text-xs text-textColor absolute -bottom-6 -left-4">Dirección</span>
+          </div>
+          <div class="bg-main-red w-full h-2 xl:hidden"></div>
+          <div class="relative xl:px-4 xl:py-3 cursor-pointer xl:bg-main-red xl:hover:bg-main-red transition-colors">
+            <span
+              class="bg-main-red xl:bg-transparent w-8 xl:w-auto h-8 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">3</span>
+            <span class="font-bold text-xs hidden xl:block">Métodos de pago</span>
+            <span class="text-xs text-textColor absolute -bottom-6 left-0">Pago</span>
+          </div>
+          <div class="bg-gray-400 w-full h-2 xl:hidden"></div>
+          <div class="relative xl:px-4 xl:py-3 cursor-pointer xl:bg-gray-400 xl:hover:bg-main-red transition-colors">
+            <span
+              class="bg-gray-400 xl:bg-transparent w-7 xl:w-auto h-7 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">4</span>
+            <span class="font-bold text-xs hidden xl:block">Resumen</span>
+            <span class="text-xs text-textColor absolute -bottom-6 -left-4">Resumen</span>
+          </div>
+        </div>
+
+        <!-- Métodos de pago -->
+        <div class="px-4 xl:px-9 py-4 rounded-2xl bg-white border shadow-lg xl:border-none xl:shadow-none xl:py-0">
+          <h4 class="xl:text-xl font-semibold mb-6 xl:mb-8">Métodos de pago</h4>
+          
+          <!-- Tarjeta de crédito -->
+          <div class="text-xs xl:text-base relative bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-6">
+            <div class="relative border-b rounded-2xl flex items-center justify-between text-main-blue pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                <img src="../assets/icons/tarjeta-credito.svg">
+              </div>
+              <span>Tarjeta de crédito</span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-main-blue rounded-full ring ring-offset-2 ring-main-blue"></span>
+            </div>
+            <div class="px-2 py-6">
+              <label class="relative block mb-3 xl:mb-5">
+                <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                  <img src="../assets/icons/tarjetas-de-credito-gray.svg">
+                </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  placeholder="0000-0000-0000-0000">
+                <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                  <img class="w-6" src="../assets/icons/visa.svg">
+                </div>
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="relative block mb-3 xl:mb-5">
+                  <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                    <img src="../assets/icons/calendario.svg">
+                  </div>
+                  <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    placeholder="MM/AA">
+                </label>
+                <label class="relative block mb-3 xl:mb-5">
+                  <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                    <img src="../assets/icons/tarjeta-outline-gray.svg">
+                  </div>
+                  <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    placeholder="CCV">
+                  <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                    <img class="cursor-pointer" src="../assets/icons/question.svg">
+                  </div>
+                </label>
+              </div>
+              <label class="relative block mb-3 xl:mb-5">
+                <div class="absolute inset-y-0 left-4 xl:left-5 flex items-center">
+                  <img src="../assets/icons/user-outline.svg">
+                </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  placeholder="Titular de la tarjeta">
+              </label>
+              <label class="relative block mb-8">
+                <input class="p-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl text-main-green" type="text"
+                  value="3 Cuotas de s/. 3,33 (s/. 10,00)">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-gray-400 z-10 inset-x-0 top-full py-2 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor font-semibold text-sm">1 Cuota de s/. 10,00 (s/. 10,00)</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor bg-gray-100 hover:text-textColor text-textColor font-semibold text-sm">3 Cuotas de s/. 3,33 (s/. 10,00)</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor font-semibold text-sm">6 Cuotas de s/. 1,67 (s/. 10,00)</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor font-semibold text-sm">9 Cuotas de s/. 1,11 (s/. 10,00)</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor font-semibold text-sm">12 Cuotas de s/. 0,83 (s/. 10,00)</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 hover:text-textColor font-semibold text-sm">36 Cuotas de s/. 10,00 (s/. 10,00)</span>
+                </div>
+              </label>
+              <div class="mb-2 text-xs xl:text-base flex items-center gap-4 xl:gap-6 px-6 cursor-pointer w-max">
+                <span class="rounded-sm h-3 w-3 ring ring-main-blue ring-offset-2 bg-main-blue"></span>
+                <div class="font-bold -mb-1">Guardar esta tarjeta</div>
+              </div>
+            </div>
+            <div class="absolute inset-x-0 -bottom-4">
+              <figure class="cursor-pointer mx-auto w-8 h-8 rounded-full bg-white border-2 shadow-lg flex items-center justify-center">
+                <img src="../assets/icons/drop-up-blue.svg">
+              </figure>
+            </div>
+          </div>
+          <!-- Tarjeta de debito -->
+          <div class="text-xs xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-6">
+            <div class="relative rounded-2xl flex items-center justify-between pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                <img src="../assets/icons/tarjeta-dedito.svg">
+              </div>
+              <span>Tarjeta de débito</span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+          </div>
+          <!-- Banca por internet y móvil -->
+          <div class="text-xs xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-6">
+            <div class="relative rounded-2xl flex items-center justify-between pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                <img src="../assets/icons/banca-por-internet.svg">
+              </div>
+              <span>
+                Banca por internet y móvil
+                <span class="block text-xs text-gray-400 font-normal">Via pago efectivo</span>
+              </span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+          </div>
+          <!-- Agentes y agencias -->
+          <div class="text-xs xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-6">
+            <div class="relative rounded-2xl flex items-center justify-between pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-2 xl:left-4 flex items-center">
+                <img src="../assets/icons/icon-banco.png">
+              </div>
+              <span>
+                Agentes y agencias
+                <span class="block text-xs text-gray-400 font-normal">Via pago efectivo</span>
+              </span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+          </div>
+          <!-- Transferencia bancaria -->
+          <div class="text-xs xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-6">
+            <div class="relative rounded-2xl border-b flex items-center justify-between pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-2 xl:left-4 flex items-center">
+                <img src="../assets/icons/tarjetas-transferencias.png">
+              </div>
+              <span>Transferencia bancaria</span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+            <div class="px-6 py-6">
+              <p>
+                <span class="block font-bold">BCP - Cuenta Corriente Soles</span>
+                <span class="block"><b>NC: </b> 193-8741964064</span>
+                <span class="block mb-2"><b>CCI: </b> 002-19300874196406411</span>
+                <span class="block font-bold">Razón Social:</span>
+                <span class="block mb-2">SENDIBOX PERU S.A.C.</span>
+                <span class="block"><b>RUC: </b> 20606153130</span>
+              </p>
+            </div>
+          </div>
+          <!-- Paypal -->
+          <div class="text-xs xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8">
+            <div class="relative rounded-2xl flex items-center justify-between pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+              <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                <img src="../assets/icons/paypal.svg">
+              </div>
+              <span>Paypal</span>
+              <span class="mr-2 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Bloque de la derecha -->
+    <div>
+      <!-- Tipo de servicio -->
+      <div class="border shadow-lg rounded-2xl px-4 py-6 xl:py-8 xl:px-10 mb-8">
+        <h3 class="font-semibold xl:text-xl mb-6 flex justify-between items-center">
+          Tipo de servicio
+          <span class="text-sm xl:text-base text-main-red cursor-pointer">(Cambiar)</span>
+        </h3>
+        <div class="border hover:border-main-green border-main-green rounded-2xl mb-6 transition-colors">
+          <div class="flex items-center justify-between px-6 py-6 xl:py-7 rounded-2xl border-main-green">
+            <div>
+              <div class="flex gap-3 mb-4">
+                <img src="../assets/icons/marcador.svg">
+                <div>
+                  <span class="font-bold text-xs xl:text-sm block">Servicio Lite</span>
+                  <span class="font-medium text-xs">(Solo pagas el envío)</span>
+                </div>
+              </div>
+              <p class="text-xs xl:text-base xl:font-medium xl:leading-8">
+                Compra en la tienda internacional de tu preferencia y envíala a la siguiente dirección.
+              </p>
+            </div>
+            <div class="font-bold w-max text-main-green pl-2 xl:pl-6 xl:pr-2">
+              <p class="text-xs xl:text-base w-max mb-5">USD 70.00</p>
+              <span
+                class="block mx-auto w-3 h-3 xl:w-4 xl:h-4 rounded-full bg-main-green ring ring-offset-2 ring-main-green"></span>
+            </div>
+          </div>
+        </div>
+        <p class="font-semibold text-center text-xs xl:text-sm">Utiliza esta dirección en USA, compra tu producto y <span class="text-main-red cursor-pointer">envíala aquí</span></p>
+      </div>
+
+      <!-- Detalles de pago -->
+      <div class="fixed inset-x-0 bottom-0 bg-white xl:relative border border-b-0 xl:border-b shadow-lg rounded-2xl pt-8 xl:py-8 px-7 xl:px-10 xl:mb-8">
+        <h3 class="font-semibold xl:text-xl xl:mb-6">Detalles de pago</h3>
+        <div class="xl:border rounded-2xl text-sm xl:text-base">
+          <div class="text-gray-400 xl:px-8 py-7 mb-12 xl:mb-0">
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Envío a Perú</span>
+              <span>USD 20.00</span>
+            </p>
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Servicio</span>
+              <span>USD 22.04</span>
+            </p>
+            <p class="flex items-center justify-between mb-2 font-semibold">
+              <span>Envío a nacional</span>
+              <span>USD 5.00</span>
+            </p>
+            <p class="text-main-green flex items-center justify-between font-semibold">
+              <span>Inpuestos</span>
+              <span>Gratis</span>
+            </p>
+            <hr class="my-6">
+            <p class="text-lg xl:text-xl text-textColor flex items-center justify-between font-bold">
+              <span>Total a pagar</span>
+              <span>
+                <span class="text-main-red">USD</span>
+                377.67
+              </span>
+            </p>
+          </div>
+          <button
+            class="absolute bottom-0 inset-x-0 xl:relative block w-full bg-main-green text-lg font-bold text-white p-4 rounded-2xl">Continuar</button>
+        </div>
+        <div class="mt-6 mx-auto text-xs xl:text-base hidden xl:flex items-center gap-4 xl:gap-6 px-6 cursor-pointer w-max">
+          <span class="rounded-sm h-3 w-3 ring ring-main-blue ring-offset-2 bg-main-blue"></span>
+          <div class="-mb-1">Acepto los <span class="font-semibold">términos y condiciones</span></div>
+        </div>
+        <div class="absolute inset-x-0 -top-4 xl:hidden cursor-pointer">
+          <figure class="mx-auto w-8 h-8 rounded-full bg-white border-2 shadow-lg flex items-center justify-center">
+            <img src="../assets/icons/drop-down-red.svg">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Información de envio -->
+      <div class="bg-white border shadow-lg rounded-2xl py-8 px-7 xl:px-10">
+        <h3 class="font-semibold xl:text-xl mb-5">Información de envío</h3>
+        <p class="px-4 mb-2 xl:mb-5 font-medium text-sm xl:text-base">Tienda <span class="font-bold">*Amazon*</span></p>
+        <p class="text-sm xl:hidden px-4 mb-2 font-medium">No pagarás impuestos.</span></p>
+        <p class="text-sm xl:hidden px-4 font-medium">No tendrás cobros extras.</p>
+        <h3 class="hidden xl:block font-semibold text-xl mb-5">Pago con tarjeta de crédito</h3>
+        <div class="px-4 hidden xl:block">
+          <p class="font-medium mb-6">Hasta 12 cuotas <span class="text-main-green">sin intereses</span> con estos bancos</p>
+          <div class="flex gap-4 mb-6">
+            <img src="../assets/icons/bbva.svg">
+            <div class="flex items-center justify-between w-full">
+              <p class="text-xs">
+                <span class="block">Exclusivo con VISA</span>
+                <span class="block">(Hasta 12 cuotas sin intereses)</span>
+              </p>
+              <a href="#" class="text-main-red text-xs font-medium">Ver condiciones</a>
+            </div>
+          </div>
+          <div class="flex gap-4 mb-8">
+            <img src="../assets/icons/dinners-club.svg">
+            <div class="flex items-center justify-between w-full">
+              <p class="text-xs">
+                <span class="block">Con todos los bancos con esta tarjeta</span>
+                <span class="block">(Hasta 6 cuotas sin intereses)</span>
+              </p>
+              <a href="#" class="text-main-red text-xs font-medium">Ver condiciones</a>
+            </div>
+          </div>
+          <p class="font-medium mb-6">Hasta 12 cuotas <span class="text-main-green">sin intereses</span> con estas tarjetas</p>
+          <div class="flex gap-10">
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/visa.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/mastercard.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/american-express.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/dinners-club-tarjeta.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-bg-black xl:bg-bgGray text-white xl:text-textColor">
+    <div class="u-container xl:grid grid-cols-4">
+      <div class="mb-14 xl:hidden">
+        <p class="mb-5">Centro de ayuda</p>
+        <p class="mb-5">Sobre nosotros</p>
+        <p class="mb-5">Beneficios comunitarios</p>
+        <p>+ Ver más</p>
+      </div>
+      <div class="col-span-2">
+        <img class="hidden xl:block mb-10" src="../assets/LOGO.svg">
+        <h2 class="text-xl font-bold xl:hidden mb-8">EnvíosUsaPerú</h2>
+        <ul class="mb-6 xl:mb-12">
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/ubicacion.svg">
+            <img class="xl:hidden" src="../assets/icons/ubicacion--white.svg">
+            <span>Jr. Emilio Althaus Nro. 121 Int. 403</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/email.svg">
+            <img class="xl:hidden" src="../assets/icons/email--white.svg">
+            <span>admin@sendibox.com</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium">
+            <img class="hidden xl:block" src="../assets/icons/telefono.svg">
+            <img class="xl:hidden" src="../assets/icons/telefono--white.svg">
+            <span>(+51) 987 294 960</span>
+          </li>
+        </ul>
+        <div class="hidden xl:flex gap-6 mb-6">
+          <img src="../assets/icons/twitter-circle.svg">
+          <img src="../assets/icons/linkedin-circle.svg">
+          <img src="../assets/icons/instagram-circle.svg">
+          <img src="../assets/icons/facebook-circle.svg">
+          <img src="../assets/icons/youtube-circle.svg">
+        </div>
+        <small class="block text-gray-400 mb-10 xl:mb-0">©2021EnvíosUsaPerú</small>
+        <div class="flex gap-6 items-center justify-center xl:hidden">
+          <img src="../assets/icons/twitter--white.svg">
+          <img src="../assets/icons/linkedin--white.svg">
+          <img src="../assets/icons/instagram--white.svg">
+          <img src="../assets/icons/facebook--white.svg">
+          <img src="../assets/icons/youtube--white.svg">
+        </div>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

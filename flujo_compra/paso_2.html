@@ -46,7 +46,7 @@
         <img class="mb-1" src="../assets/icons/drop-down-white.svg">
 
         <!-- OPCIONES / DROP DOWN -->
-        <div class="absolute text-textColor z-10 w-max -right-2 top-8 py-2 rounded-2xl bg-white border shadow-sm">
+        <div class="hidden absolute text-textColor z-10 w-max -right-2 top-8 py-2 rounded-2xl bg-white border shadow-sm">
           <span class="cursor-pointer block py-2 px-6 bg-gray-100 hover:bg-gray-100 font-medium text-sm">Dólares</span>
           <span class="cursor-pointer block py-2 px-6 hover:bg-gray-100 font-medium text-sm">Soles</span>
         </div>
@@ -57,28 +57,13 @@
   <section class="u-container py-14 grid xl:grid-cols-2 gap-8">
     <!-- Bloque de la izquierda -->
     <div>
-      <h3 class="font-semibold text-lg xl:text-xl mb-3">Detalles de producto</h3>
+      <h3 class="font-semibold text-lg xl:text-xl mb-3">Dirección de entrega</h3>
       <p class="text-sm xl:text-base leading-6 xl:leading-8 mb-8 xl:mb-5">
-        Toda esta información nos ayudará a conocer más acerca del producto que estas deseando comprar. Completa la
-        siguiente
-        información
+        Recuerda completar correctamente los datos de entrega para que tu
+        producto no sufra ningún contratiempo en su llegada.
       </p>
 
-      <!-- Form para link del producto -->
-      <div class="text-sm xl:text-base border shadow-lg rounded-2xl overflow-hidden mb-10">
-        <p class="px-4 xl:px-6 py-3 text-white font-semibold mb-6 bg-main-red">
-          Ingresa el link del producto
-        </p>
-        <label class="relative block mb-6 px-4 xl:px-6">
-          <input class="px-6 py-4 border focus:border-blue-400 rounded-2xl w-full transition-colors" type="text"
-            placeholder="www.tienda.com/producto">
-          <div class="absolute right-12 inset-y-0 flex items-center">
-            <img class="inline cursor-pointer" src="../assets/icons/buscar.svg">
-          </div>
-        </label>
-      </div>
-
-      <!-- Form de Detalles del producto -->
+      <!--Dirección de entrega -->
       <div class="xl:border xl:shadow-lg rounded-2xl">
         <!-- Timeline -->
         <div class="px-4 xl:px-0 text-white flex items-center w-full xl:rounded-tl-2xl xl:rounded-tr-2xl xl:overflow-hidden font-semibold mb-16 xl:mb-9 xl:grid xl:items-stretch	 grid-cols-4">
@@ -89,7 +74,7 @@
           </div>
           <div class="bg-main-red w-full h-2 xl:hidden"></div>
           <div class="relative xl:px-4 xl:py-3 cursor-pointer xl:bg-main-red xl:hover:bg-main-red transition-colors">
-            <span class="bg-main-red xl:bg-transparent w-7 xl:w-auto h-7 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">2</span>
+            <span class="bg-main-red xl:bg-transparent w-8 xl:w-auto h-8 xl:h-auto rounded-full flex xl:block items-center justify-center font-bold xl:text-3xl">2</span>
             <span class="font-bold text-xs hidden xl:block">Dirección de entrega</span>
             <span class="text-xs text-textColor absolute -bottom-6 -left-4">Dirección</span>
           </div>
@@ -108,113 +93,156 @@
             <span class="text-xs text-textColor absolute -bottom-6 -left-4">Resumen</span>
           </div>
         </div>
-        <!-- Detalles del producto -->
-        <div class="px-4 xl:px-9 py-4 rounded-2xl bg-white border shadow-lg xl:border-none xl:shadow-none xl:py-0">
-          <h4 class="hidden xl:block text-xl font-semibold mb-8">Detalles del producto</h4>
-          <label class="relative block mb-8 mt-8 xl:mt-0">
-            <input class="p-6 input w-full text-sm font-bold bg-white border shadow-sm rounded-2xl" type="text"
-              placeholder="Ingresa el nombre del producto">
-            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Nombre del producto</span>
-          </label>
-          <div class="relative block border shadow-sm rounded-2xl py-5 px-16 mb-24">
-            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Fotos referencial</span>
-            <img class="w-40 xl:w-56 xl:h-40 mx-auto cursor-pointer mb-4" src="../assets/images/tenis.svg">
-            <div class="flex items-center gap-4 xl:gap-8 justify-center mb-12">
-              <img
-                class="w-8 xl:w-16 xl:h-12 cursor-pointer border-2 border-transparent hover:border-green-300 border-green-300 transition-all"
-                src="../assets/images/tenis.svg">
-              <img
-                class="w-8 xl:w-16 xl:h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all"
-                src="../assets/images/tenis.svg">
-              <img
-                class="w-8 xl:w-16 xl:h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all"
-                src="../assets/images/tenis.svg">
-              <img
-                class="w-8 xl:w-16 xl:h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all"
-                src="../assets/images/tenis.svg">
-              <img
-                class="w-8 xl:w-16 xl:h-12 cursor-pointer border-2 border-transparent hover:border-green-300 transition-all"
-                src="../assets/images/tenis.svg">
-            </div>
-            <div class="absolute inset-x-0 -bottom-10 flex justify-center">
-              <div class="py-4 px-6 xl:py-5 xl:px-10 flex items-center gap-6 border-2 shadow-sm rounded-2xl bg-white">
-                <img class="cursor-pointer transform hover:scale-90 transition-all"
-                  src="../assets/icons/icon-restar.svg">
-                <input class="w-16 text-center font-semibold text-2xl xl:text-3xl" type="text" value="01">
-                <img class="cursor-pointer transform hover:scale-90 transition-all"
-                  src="../assets/icons/icon-sumar.svg">
-              </div>
-            </div>
-          </div>
-          <div class="mb-14">
-            <p class="text-sm xl:text-base font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 1</p>
-          </div>
-          <div class="mb-14">
-            <p class="text-sm xl:text-base font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 2</p>
-          </div>
-          <div class="mb-24">
-            <p class="text-sm xl:text-base font-bold pb-3 pl-6 border-b border-gray-200">Caracteristica 3</p>
-          </div>
-          <div class="xl:grid grid-cols-2 gap-3">
-            <label class="relative block mb-8">
-              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Precio referencial</span>
-              <div class="absolute left-6 inset-y-0 flex items-center font-bold text-main-red">
-                <span>USD</span>
-              </div>
-              <input class="pl-16 p-6 input w-full font-bold bg-white border shadow-sm rounded-2xl" type="text"
-                value="300.00">
-              <span class="absolute bottom-2 left-6 text-xs text-gray-400">Precio Max. USD 3000.00</span>
-              <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
-                <img src="../assets/icons/question.svg">
-              </div>
-            </label>
-            <label class="relative block mb-8">
-              <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Peso</span>
-              <input class="p-6 input w-full font-bold bg-white border shadow-sm rounded-2xl" type="text" value="1.16">
-              <div class="absolute right-6 inset-y-0 flex items-center font-bold">
-                <span class="cursor-pointer px-3 hover:text-main-red text-main-red transition-colors">kl</span>
-                <span class="cursor-pointer px-3 hover:text-main-red transition-colors border-l border-r">lb</span>
-                <span class="cursor-pointer px-3 hover:text-main-red transition-colors ">oz</span>
-              </div>
-            </label>
-          </div>
-          <label class="relative block mb-8">
-            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Categoría</span>
-            <input class="p-6 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
-              placeholder="Elige una categoría">
-            <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
-              <img src="../assets/icons/drop-down-black.svg">
-            </div>
 
-            <!-- OPCIONES / DROP DOWN -->
-            <div
-              class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
-              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Celulares</span>
-              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Tabletas</span>
-              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Laptops</span>
-              <span
-                class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">E-reader</span>
-              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Camara y video</span>
-              <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Drones</span>
+        <!-- Dirección de entrega -->
+        <div class="px-4 xl:px-9 py-4 rounded-2xl bg-white border shadow-lg xl:border-none xl:shadow-none xl:py-0">
+          <h4 class="xl:text-xl font-semibold mb-6 xl:mb-8">Dirección de entrega</h4>
+          
+          <!-- Dirección -->
+          <div class="text-sm xl:text-base flex items-center justify-between p-5 bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8 cursor-pointer">
+            <div class="leading-6 text-gray-400">
+              <span class="block">Juancito</span>
+              <span class="block">Av. Arequipa, Miraflores 3224</span>
+              <span class="block">Plaza Bolivar</span>
+              <span class="block mb-2">922302624</span>
+              <span class="flex gap-3 items-center">
+                <img src="../assets/icons/lapiz-gray.svg">
+                <span>Editar</span>
+              </span>
             </div>
-          </label>
-          <label class="relative block mb-8 border shadow-sm rounded-2xl">
-            <span class="absolute -top-2 left-7 bg-white text-xs font-medium">Nombre del producto</span>
-            <textarea class="text-sm xl:text-base w-full rounded-2xl focus:outline-none p-6 text-gray-400 resize-none"
-              rows="3">Describe brevemente tu producto (Talla, tamaño, capacidad, color, etc.)</textarea>
-            <p class="font-bold text-xs xl:text-sm mx-6 border-t pt-2 pb-4 border-gray-100">Ayúdanos a mejorar tu
-              experiencia de compra</p>
-          </label>
+            <span class="mr-4 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+          </div>
+
+          <!-- Nueva direccion -->
+          <div class="text-sm xl:text-base relative bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8 ">
+            <div class="border-b rounded-2xl flex items-center justify-between text-main-blue p-6 font-bold cursor-pointer">
+              <span>Nueva Direccion</span>
+              <span class="mr-4 xl:mr-10 w-4 h-4 bg-main-blue rounded-full ring ring-offset-2 ring-main-blue"></span>
+            </div>
+            <div class="px-2 py-6">
+              <div class="xl:grid grid-cols-2 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Nombre</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="Javier Alvaro">
+                </label>
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Apellidos</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="De la Cruz Fernandez">
+                </label>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Documento</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="78002542">
+                </label>
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Teléfono</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="922329525">
+                </label>
+              </div>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Dirección</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Av. Oválo Gutierrez">
+              </label>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Referencia (Opcional)</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Ingresar la referencia">
+              </label>
+              <div class="xl:grid grid-cols-3 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium"># Piso u Oficina</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="1025">
+                </label>
+                <label class="relative block mb-5 col-span-2">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Correo electrónico</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="usuario_01@gmail.com">
+                </label>
+              </div>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Departamento</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Lima">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Provincia</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Lima">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <label class="relative block mb-8">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Distrito</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Ate">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <div class="mb-2 text-xs xl:text-base flex items-center gap-4 xl:gap-6 px-6 cursor-pointer w-max">
+                <span class="rounded-sm h-3 w-3 ring ring-main-blue ring-offset-2 bg-main-blue"></span>
+                <div class="font-bold -mb-1">Guardar esta dirección</div>
+              </div>
+            </div>
+            <div class="absolute inset-x-0 -bottom-4">
+              <figure class="cursor-pointer mx-auto w-8 h-8 rounded-full bg-white border-2 shadow-lg flex items-center justify-center">
+                <img src="../assets/icons/drop-up-blue.svg">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Recojo en oficina -->
+          <div class="text-sm xl:text-base bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8 ">
+            <div class="rounded-2xl flex items-center justify-between p-6 font-bold cursor-pointer">
+              <span>Recojo en oficina</span>
+              <span class="mr-4 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Bloque de la derecha -->
     <div>
       <!-- Tipo de servicio -->
-      <div class="border shadow-lg rounded-2xl px-4 py-6 xl:py-8 xl:px-10 cursor-pointer xl:mb-8">
-        <h3 class="font-semibold text-xl mb-6">Tipo de servicio</h3>
+      <div class="border shadow-lg rounded-2xl px-4 py-6 xl:py-8 xl:px-10 mb-8">
+        <h3 class="font-semibold xl:text-xl mb-6 flex justify-between items-center">
+          Tipo de servicio
+          <span class="text-sm xl:text-base text-main-red cursor-pointer">(Cambiar)</span>
+        </h3>
         <div class="border hover:border-main-green border-main-green rounded-2xl mb-6 transition-colors">
-          <div class="flex items-center justify-between px-6 py-6 xl:py-7 rounded-2xl xl:border-b border-main-green">
+          <div class="flex items-center justify-between px-6 py-6 xl:py-7 rounded-2xl border-main-green">
             <div>
               <div class="flex gap-3 mb-4">
                 <img src="../assets/icons/marcador.svg">
@@ -223,7 +251,7 @@
                   <span class="font-medium text-xs">(Solo pagas el envío)</span>
                 </div>
               </div>
-              <p class="text-xs xl:text-base font-medium leading-6 xl:leading-8">
+              <p class="text-xs xl:text-base xl:font-medium xl:leading-8">
                 Compra en la tienda internacional de tu preferencia y envíala a la siguiente dirección.
               </p>
             </div>
@@ -233,42 +261,12 @@
                 class="block mx-auto w-3 h-3 xl:w-4 xl:h-4 rounded-full bg-main-green ring ring-offset-2 ring-main-green"></span>
             </div>
           </div>
-          <div class="hidden xl:block px-6 py-4 leading-6 text-sm font-medium">
-            <span class="block">Joe Bidden</span>
-            <span class="block">11751 SW 103RD LN</span>
-            <span class="block">CODE 169</span>
-            <span class="block">MIAMI, FL 33186-8537</span>
-            <span class="block">Estados Unidos</span>
-            <span class="block">Número de teléfono: 7862982107</span>
-          </div>
         </div>
-        <div class="border hover:border-main-green rounded-2xl transition-colors">
-          <div class="flex items-center justify-between px-6 py-6 xl:py-7">
-            <div>
-              <div class="flex gap-3 mb-4">
-                <img src="../assets/icons/corona.svg">
-                <div>
-                  <span class="font-bold text-xs xl:text-sm block">Servicio Premium</span>
-                  <span class="font-medium text-xs">(Nos encargamos de todo)</span>
-                </div>
-              </div>
-              <p class="text-xs xl:text-base font-medium leading-6 xl:leading-8">
-                Realizamos la compra y el envío desde USA,
-                hasta la entrega en la dirección final.
-              </p>
-            </div>
-            <div class="font-bold w-max pl-2 xl:pl-6 xl:pr-2">
-              <p class="text-xs xl:text-base w-max mb-5">USD 150.00</p>
-              <span
-                class="block mx-auto w-3 xl:w-4 h-3 xl:h-4 rounded-full bg-gray-400 ring ring-offset-2 ring-gray-400"></span>
-            </div>
-          </div>
-        </div>
+        <p class="font-semibold text-center text-xs xl:text-sm">Utiliza esta dirección en USA, compra tu producto y <span class="text-main-red cursor-pointer">envíala aquí</span></p>
       </div>
 
       <!-- Detalles de pago -->
-      <div
-        class="fixed inset-x-0 bottom-0 bg-white xl:relative border border-b-0 xl:border-b shadow-lg rounded-2xl pt-8 xl:py-8 px-7 xl:px-10">
+      <div class="fixed inset-x-0 bottom-0 bg-white xl:relative border border-b-0 xl:border-b shadow-lg rounded-2xl pt-8 xl:py-8 px-7 xl:px-10 xl:mb-8">
         <h3 class="font-semibold xl:text-xl xl:mb-6">Detalles de pago</h3>
         <div class="xl:border rounded-2xl text-sm xl:text-base">
           <div class="text-gray-400 xl:px-8 py-7 mb-12 xl:mb-0">
@@ -304,6 +302,57 @@
           <figure class="mx-auto w-8 h-8 rounded-full bg-white border-2 shadow-lg flex items-center justify-center">
             <img src="../assets/icons/drop-down-red.svg">
           </figure>
+        </div>
+      </div>
+
+      <!-- Información de envio -->
+      <div class="bg-white border shadow-lg rounded-2xl py-8 px-7 xl:px-10">
+        <h3 class="font-semibold xl:text-xl mb-5">Información de envío</h3>
+        <p class="px-4 mb-2 xl:mb-5 font-medium text-sm xl:text-base">Tienda <span class="font-bold">*Amazon*</span></p>
+        <p class="text-sm xl:hidden px-4 mb-2 font-medium">No pagarás impuestos.</span></p>
+        <p class="text-sm xl:hidden px-4 font-medium">No tendrás cobros extras.</p>
+        <h3 class="hidden xl:block font-semibold text-xl mb-5">Pago con tarjeta de crédito</h3>
+        <div class="px-4 hidden xl:block">
+          <p class="font-medium mb-6">Hasta 12 cuotas <span class="text-main-green">sin intereses</span> con estos bancos</p>
+          <div class="flex gap-4 mb-6">
+            <img src="../assets/icons/bbva.svg">
+            <div class="flex items-center justify-between w-full">
+              <p class="text-xs">
+                <span class="block">Exclusivo con VISA</span>
+                <span class="block">(Hasta 12 cuotas sin intereses)</span>
+              </p>
+              <a href="#" class="text-main-red text-xs font-medium">Ver condiciones</a>
+            </div>
+          </div>
+          <div class="flex gap-4 mb-8">
+            <img src="../assets/icons/dinners-club.svg">
+            <div class="flex items-center justify-between w-full">
+              <p class="text-xs">
+                <span class="block">Con todos los bancos con esta tarjeta</span>
+                <span class="block">(Hasta 6 cuotas sin intereses)</span>
+              </p>
+              <a href="#" class="text-main-red text-xs font-medium">Ver condiciones</a>
+            </div>
+          </div>
+          <p class="font-medium mb-6">Hasta 12 cuotas <span class="text-main-green">sin intereses</span> con estas tarjetas</p>
+          <div class="flex gap-10">
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/visa.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/mastercard.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/american-express.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+            <div>
+              <img class="block mb-4 mx-auto" src="../assets/icons/dinners-club-tarjeta.svg">
+              <p class="text-xs">12 cuotas</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

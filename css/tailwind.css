@@ -28,7 +28,7 @@
   }
 
   input {
-    @apply focus:outline-none;
+    @apply focus:outline-none focus:border-blue-400 transition-colors;
   }
 
   .bordered {

@@ -15,6 +15,7 @@ module.exports = {
         'main-red': '#DE1A3E',
         'main-red-transparent': 'rgba(222, 26, 62, 0.7)',
         'main-green': '#5BC43A',
+        'main-blue': '#1EA9E4',
         'main-gray': '#4F5665',
         'bg-black': '#0B132A',
         'sky': '#FAFDFF',
