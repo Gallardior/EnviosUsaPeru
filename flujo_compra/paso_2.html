@@ -99,8 +99,9 @@
           <h4 class="xl:text-xl font-semibold mb-6 xl:mb-8">Dirección de entrega</h4>
           
           <!-- Dirección -->
-          <div class="text-sm xl:text-base flex items-center justify-between p-5 bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8 cursor-pointer">
-            <div class="leading-6 text-gray-400">
+          <div class="text-sm xl:text-base relative bg-white border hover:border-blue-400 transition-colors shadow-sm rounded-2xl mb-8">
+            <div class="border-b rounded-2xl flex items-center justify-between p-6 font-semibold cursor-pointer">
+              <div class="leading-6 text-gray-400">
               <span class="block">Juancito</span>
               <span class="block">Av. Arequipa, Miraflores 3224</span>
               <span class="block">Plaza Bolivar</span>
@@ -109,8 +110,106 @@
                 <img src="../assets/icons/lapiz-gray.svg">
                 <span>Editar</span>
               </span>
+              </div>
+              <span class="mr-4 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
             </div>
-            <span class="mr-4 xl:mr-10 w-4 h-4 bg-gray-300 rounded-full ring ring-offset-2 ring-gray-300"></span>
+            <div class="px-2 py-6">
+              <div class="xl:grid grid-cols-2 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Nombre</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="Javier Alvaro">
+                </label>
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Apellidos</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="De la Cruz Fernandez">
+                </label>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Documento</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="78002542">
+                </label>
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Teléfono</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="922329525">
+                </label>
+              </div>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Dirección</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Av. Oválo Gutierrez">
+              </label>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Referencia (Opcional)</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                  value="Ingresar la referencia">
+              </label>
+              <div class="xl:grid grid-cols-3 gap-3">
+                <label class="relative block mb-5">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium"># Piso u Oficina</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="1025">
+                </label>
+                <label class="relative block mb-5 col-span-2">
+                  <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Correo electrónico</span>
+                  <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text"
+                    value="usuario_01@gmail.com">
+                </label>
+              </div>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Departamento</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text" value="Lima">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+            
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <label class="relative block mb-5">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Provincia</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text" value="Lima">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+            
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <label class="relative block mb-8">
+                <span class="absolute -top-2 left-4 bg-white text-xs font-medium">Distrito</span>
+                <input class="px-4 py-5 input w-full font-semibold bg-white border shadow-sm rounded-2xl" type="text" value="Ate">
+                <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
+                  <img src="../assets/icons/drop-down-black.svg">
+                </div>
+            
+                <!-- OPCIONES / DROP DOWN -->
+                <div class="hidden absolute text-textColor z-10 inset-x-0 top-full py-4 rounded-2xl bg-white border shadow-sm">
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Arequipa</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 bg-red-100 font-semibold text-sm">Lima</span>
+                  <span class="cursor-pointer block py-2 px-6 hover:bg-red-100 font-semibold text-sm">Otros</span>
+                </div>
+              </label>
+              <button class="bg-main-blue block w-full text-center p-5 font-bold rounded-2xl text-white">Guardar</button>
+            </div>
+            <div class="absolute inset-x-0 -bottom-4">
+              <figure
+                class="cursor-pointer mx-auto w-8 h-8 rounded-full bg-white border-2 shadow-lg flex items-center justify-center">
+                <img src="../assets/icons/drop-up-blue.svg">
+              </figure>
+            </div>
           </div>
 
           <!-- Nueva direccion -->

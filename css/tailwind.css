@@ -23,6 +23,18 @@
     max-width: 1440px;
   }
   
+  .oculto {
+    @apply opacity-0 pointer-events-none;
+  }
+
+  .visible {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  .testimony_card--active {
+    @apply bg-white border-main-red shadow-xl;
+  }
+
   .shadow-red {
     box-shadow: 0 16px 24px rgb(222 26 22 / 25%);
   }

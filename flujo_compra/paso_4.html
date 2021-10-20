@@ -123,12 +123,27 @@
               <span class="block font-medium">Dirección</span>
               <span class="block font-medium">Referencia</span>
               <span class="block font-medium">Teléfono</span>
+              <span class="block font-medium">Correo</span>
               </p>
               <p class="leading-6 xl:leading-8">
               <span class="block font-bold">Javier Juan de la Cruz Fernandez</span>
               <span class="block font-bold">Arequipa, Miraflores 3224</span>
               <span class="block font-bold">Plaza Bolivar</span>
               <span class="block font-bold">922302624</span>
+              <span class="block font-bold">usuario_94@gmail.com</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Dirección de entrega CASO 2 -->
+
+          <div class="hidden relative p-6 rounded-2xl border shadow-sm mb-8">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Dirección de entrega</span>
+            <div class="flex gap-4 xl:gap-10 text-xs xl:text-base">
+              <p class="leading-6 xl:leading-8">
+                <span class="block font-medium">Recojo en oficina</span>
+                <span class="block font-bold">Lince, Lima, Perú:</span>
+                <span class="block font-medium">Jr. Emilio Althaus Nro. 121 Oficina 403</span>
               </p>
             </div>
           </div>
@@ -137,22 +152,32 @@
           <div class="relative p-6 rounded-2xl border shadow-sm mb-8">
             <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Método de pago</span>
             <!-- Tarjeta de debito -->
-            <div class="text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
-              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
-                <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
-                  <img src="../assets/icons/tarjeta-dedito.svg">
+            <div class="text-xs xl:text-base bg-white border shadow-sm rounded-2xl mt-1">
+              <label class="relative block">
+                <span class="bg-white absolute left-4 -top-2 text-xs font-medium">Tarjeta de débito</span>
+                <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                  <img src="../assets/icons/tarjetas-de-credito-gray.svg">
                 </div>
-                <span>Tarjeta de débito</span>
-              </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white rounded-2xl" type="text"
+                  value="0000-0000-0000-0000" readonly>
+                <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                  <img class="w-6" src="../assets/icons/visa.svg">
+                </div>
+              </label>
             </div>
-            <!-- Tarjeta de credito -->
-            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
-              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
-                <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
-                  <img src="../assets/icons/tarjeta-credito.svg">
+            <!-- Tarjeta de debito -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl mt-1">
+              <label class="relative block">
+                <span class="bg-white absolute left-4 -top-2 text-xs font-medium">Tarjeta de crédito</span>
+                <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                  <img src="../assets/icons/tarjetas-de-credito-gray.svg">
                 </div>
-                <span>Tarjeta de crédito</span>
-              </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white rounded-2xl" type="text"
+                  value="0000-0000-0000-0000" readonly>
+                <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                  <img class="w-6" src="../assets/icons/visa.svg">
+                </div>
+              </label>
             </div>
             <!-- Banca por internet y móvil -->
             <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
