@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible|" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envios USA-Peru</title>
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="u-container py-3 xl:py-5 flex items-center justify-between">
+    <a href="#" class="hidden xl:block">
+      <figure>
+        <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
+      </figure>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-10">
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
+      <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
+      <a href="#" class="font-medium text-black">Iniciar sesíon</a>
+      <a href="#"
+        class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
+    </nav>
+
+    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
+    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
+    <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
+  </header>
+
+  <h3 class="text-lg font-bold u-container pt-6 pb-0 xl:hidden">Resumen</h3>
+  <section class="u-container py-14 grid xl:grid-cols-2 gap-8">
+    <!-- Bloque de la izquierda -->
+    <div>
+      <!--Resumen -->
+      <div class="xl:border xl:shadow-lg rounded-2xl">
+        <!-- Resumen -->
+        <div class="xl:px-9">
+          <h4 class="mt-8 xl:text-xl font-semibold mb-6 xl:mb-8 hidden xl:flex items-center justify-between">
+            Resumen
+            <span>
+              <span class="font-thin text-gray-400 text-sm">Tracking</span>
+              <span class="ml-2 font-bold text-base">090319876534212</span>
+            </span>
+          </h4>
+          
+          <!-- Producto -->
+          <div class="relative p-6 rounded-2xl border shadow-sm mb-8">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Detalles del producto</span>
+            <div class="flex items-center gap-4 mb-6">
+              <img class="w-16 h-16 xl:w-28 xl:h-28" src="../assets/images/jordan-1.svg">
+              <p class="text-xs xl:text-base font-bold">
+                Nike Men's Air Force 1 High '07 LV8 Basketball Shoe
+              </p>
+            </div>
+            <div class="flex flex-col xl:flex-row gap-5 mb-8 text-sm xl:text-base">
+              <p class="flex items-center gap-3">
+                <span class="text-sm">Precio</span>
+                <span class="font-bold">USD 300.00</span>
+              </p>
+              <p class="flex items-center gap-3">
+                <span class="text-sm">Cantidad</span>
+                <span class="font-bold">01</span>
+              </p>
+              <p class="flex items-center gap-3">
+                <span class="text-sm">Peso</span>
+                <span class="font-bold">1.16 kg</span>
+              </p>
+            </div>
+            <div class="mb-10">
+              <p class="text-sm xl:text-base font-bold pb-3 xl:pl-6 border-b border-gray-200">Caracteristica 1</p>
+            </div>
+            <div class="mb-10">
+              <p class="text-sm xl:text-base font-bold pb-3 xl:pl-6 border-b border-gray-200">Caracteristica 2</p>
+            </div>
+          </div>
+
+          <!-- Dirección de entrega -->
+          <div class="relative p-6 rounded-2xl border shadow-sm mb-8">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Dirección de entrega</span>
+            <div class="flex gap-4 xl:gap-10 text-xs xl:text-base">
+              <p class="leading-6 xl:leading-8">
+              <span class="block font-medium">Nombre</span>
+              <span class="block font-medium">Dirección</span>
+              <span class="block font-medium">Referencia</span>
+              <span class="block font-medium">Teléfono</span>
+              <span class="block font-medium">Correo</span>
+              </p>
+              <p class="leading-6 xl:leading-8">
+              <span class="block font-bold">Javier Juan de la Cruz Fernandez</span>
+              <span class="block font-bold">Arequipa, Miraflores 3224</span>
+              <span class="block font-bold">Plaza Bolivar</span>
+              <span class="block font-bold">922302624</span>
+              <span class="block font-bold">usuario_94@gmail.com</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Dirección de entrega CASO 2 -->
+
+          <div class="hidden relative p-6 rounded-2xl border shadow-sm mb-8">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Dirección de entrega</span>
+            <div class="flex gap-4 xl:gap-10 text-xs xl:text-base">
+              <p class="leading-6 xl:leading-8">
+                <span class="block font-medium">Recojo en oficina</span>
+                <span class="block font-bold">Lince, Lima, Perú:</span>
+                <span class="block font-medium">Jr. Emilio Althaus Nro. 121 Oficina 403</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Métodos de pago -->
+          <div class="relative p-6 rounded-2xl border shadow-sm mb-8">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Método de pago</span>
+            <!-- Tarjeta de debito -->
+            <div class="text-xs xl:text-base bg-white border shadow-sm rounded-2xl mt-1">
+              <label class="relative block">
+                <span class="bg-white absolute left-4 -top-2 text-xs font-medium">Tarjeta de débito</span>
+                <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                  <img src="../assets/icons/tarjetas-de-credito-gray.svg">
+                </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white rounded-2xl" type="text"
+                  value="0000-0000-0000-0000" readonly>
+                <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                  <img class="w-6" src="../assets/icons/visa.svg">
+                </div>
+              </label>
+            </div>
+            <!-- Tarjeta de debito -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl mt-1">
+              <label class="relative block">
+                <span class="bg-white absolute left-4 -top-2 text-xs font-medium">Tarjeta de crédito</span>
+                <div class="absolute inset-y-0 left-3 xl:left-5 flex items-center">
+                  <img src="../assets/icons/tarjetas-de-credito-gray.svg">
+                </div>
+                <input class="pl-12 xl:pl-16 p-5 input w-full font-semibold bg-white rounded-2xl" type="text"
+                  value="0000-0000-0000-0000" readonly>
+                <div class="absolute inset-y-0 right-3 xl:right-5 flex items-center">
+                  <img class="w-6" src="../assets/icons/visa.svg">
+                </div>
+              </label>
+            </div>
+            <!-- Banca por internet y móvil -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
+              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+                <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                  <img src="../assets/icons/banca-por-internet.svg">
+                </div>
+                <span>
+                  Banca por internet y móvil
+                  <span class="block text-xs text-gray-400 font-normal">Via pago efectivo</span>
+                </span>
+              </div>
+            </div>
+            <!-- Agentes y agencias -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
+              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+                <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                  <img src="../assets/icons/icon-banco.png">
+                </div>
+                <span>
+                  Agentes y agencias
+                  <span class="block text-xs text-gray-400 font-normal">Via pago efectivo</span>
+                </span>
+              </div>
+            </div>
+            <!-- Transferencia bancaria -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
+              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+                <div class="absolute inset-y-0 left-2 xl:left-4 flex items-center">
+                  <img src="../assets/icons/tarjetas-transferencias.png">
+                </div>
+                <span>Transferencia bancaria</span>
+              </div>
+            </div>
+            <!-- Paypal -->
+            <div class="hidden text-xs xl:text-base bg-white border shadow-sm rounded-2xl">
+              <div class="relative rounded-2xl pl-16 xl:pl-20 p-6 font-bold cursor-pointer">
+                <div class="absolute inset-y-0 left-4 xl:left-6 flex items-center">
+                  <img src="../assets/icons/paypal.svg">
+                </div>
+                <span>Paypal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detalles de pago -->
+          <div class="text-sm xl:text-base relative py-10 p-6 rounded-2xl border shadow-sm mb-16">
+            <span class="absolute -top-3 left-8 bg-white text-sm font-medium">Detalles de pago</span>
+            <div class="text-gray-400">
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Producto</span>
+                  <span>USD 120.00</span>
+                </p>
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Tax</span>
+                  <span>USD 20.00</span>
+                </p>
+                <hr class="my-4">
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Total en USA</span>
+                  <span>USD 140.00</span>
+                </p>
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Envío a Perú</span>
+                  <span>USD 20.00</span>
+                </p>
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Servicio</span>
+                  <span>USD 22.04</span>
+                </p>
+                <p class="flex items-center justify-between mb-2 font-semibold">
+                  <span>Envío a nacional</span>
+                  <span>USD 5.00</span>
+                </p>
+                <p class="text-main-green flex items-center justify-between font-semibold">
+                  <span>Inpuestos</span>
+                  <span>Gratis</span>
+                </p>
+                <hr class="my-6">
+                <p class="text-base xl:text-xl text-textColor flex items-center justify-between font-bold">
+                  <span>Pago total</span>
+                  <span>
+                    <span class="text-main-red">USD</span>
+                    159.00
+                  </span>
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Bloque de la derecha -->
+    <div>
+
+      <!-- Agradecimiento e ID de tracking -->
+      <div class="bg-white xl:border xl:shadow-lg rounded-2xl xl:py-10 xl:px-16">
+        <div class="xl:p-8 xl:border xl:shadow-sm rounded-2xl text-center">
+          <h4 class="font-bold text-2xl mb-10">Solicitud recibida</h4>
+          <img src="../assets/images/caja-paso-4.svg" class="mx-auto mb-8">
+          <p class="font-semibold mb-12 text-xs xl:text-base">
+            Tu número de tracking a sido enviado a
+            <a href="#" class="text-main-red block">envios-usa-peru@gmail.com</a>
+          </p>
+          <div class="flex items-center justify-center gap-6 mb-14 text-xs xl:text-base">
+            <span class="font-medium text-gray-400">Número de Tracking</span>
+            <span class="font-bold">090319876534212</span>
+            <img src="../assets/icons/copy.svg" class="cursor-pointer">
+          </div>
+          <p class="text-xs xl:text-sm">¡Gracias por confiar en Envíos Usa Perú!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-bg-black xl:bg-bgGray text-white xl:text-textColor">
+    <div class="u-container xl:grid grid-cols-4">
+      <div class="mb-14 xl:hidden">
+        <p class="mb-5">Centro de ayuda</p>
+        <p class="mb-5">Sobre nosotros</p>
+        <p class="mb-5">Beneficios comunitarios</p>
+        <p>+ Ver más</p>
+      </div>
+      <div class="col-span-2">
+        <img class="hidden xl:block mb-10" src="../assets/LOGO.svg">
+        <h2 class="text-xl font-bold xl:hidden mb-8">EnvíosUsaPerú</h2>
+        <ul class="mb-6 xl:mb-12">
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/ubicacion.svg">
+            <img class="xl:hidden" src="../assets/icons/ubicacion--white.svg">
+            <span>Jr. Emilio Althaus Nro. 121 Int. 403</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium mb-6">
+            <img class="hidden xl:block" src="../assets/icons/email.svg">
+            <img class="xl:hidden" src="../assets/icons/email--white.svg">
+            <span>admin@sendibox.com</span>
+          </li>
+          <li class="flex gap-4 items-center font-medium">
+            <img class="hidden xl:block" src="../assets/icons/telefono.svg">
+            <img class="xl:hidden" src="../assets/icons/telefono--white.svg">
+            <span>(+51) 987 294 960</span>
+          </li>
+        </ul>
+        <div class="hidden xl:flex gap-6 mb-6">
+          <img src="../assets/icons/twitter-circle.svg">
+          <img src="../assets/icons/linkedin-circle.svg">
+          <img src="../assets/icons/instagram-circle.svg">
+          <img src="../assets/icons/facebook-circle.svg">
+          <img src="../assets/icons/youtube-circle.svg">
+        </div>
+        <small class="block text-gray-400 mb-10 xl:mb-0">©2021EnvíosUsaPerú</small>
+        <div class="flex gap-6 items-center justify-center xl:hidden">
+          <img src="../assets/icons/twitter--white.svg">
+          <img src="../assets/icons/linkedin--white.svg">
+          <img src="../assets/icons/instagram--white.svg">
+          <img src="../assets/icons/facebook--white.svg">
+          <img src="../assets/icons/youtube--white.svg">
+        </div>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+      <div class="hidden xl:grid">
+        <a href="#" class="text-lg font-medium mb-4">Home</a>
+        <a href="#" class="mb-2">Inicio</a>
+        <a href="#" class="mb-2">Servicios</a>
+        <a href="#" class="mb-2">Empresa</a>
+        <a href="#" class="mb-2">Proyectos</a>
+        <a href="#">Tarifas</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
