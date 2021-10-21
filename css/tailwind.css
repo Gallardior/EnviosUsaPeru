@@ -35,16 +35,17 @@
     @apply bg-white border-main-red shadow-xl;
   }
 
+  .testimony_card--active--mobile {
+    @apply bg-white border-main-red shadow-xl;
+    opacity: 1 !important;
+  }
+
   .shadow-red {
     box-shadow: 0 16px 24px rgb(222 26 22 / 25%);
   }
 
   input {
     @apply focus:outline-none focus:border-blue-400 transition-colors;
-  }
-
-  .bordered {
-    @apply border-2 border-red-500
   }
 
   .triangle {

@@ -368,64 +368,144 @@
         Estas son las historias de nuestro usuarios y las razones por que 
         deciden confiar en nosotros.
       </p>
-      <div class="xl:flex gap-12 mb-16">
-        <div data-id="1" class="testimony_card--active testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
-          <div class="flex gap-5 items-center mb-8">
-            <img src="assets/images/user-1.svg">
-            <div>
-              <span class="block text-lg font-medium">Hugo Vaquez</span>
-              <span class="block text-sm text-gray-400 -mt-1">Lambayeque, Perú</span>
+      <!-- SLIDER DESKTOP-->
+      <div class="hidden xl:block">
+        <div class="xl:flex gap-12 mb-16">
+          <div data-id="1" class="testimony_card--active testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-1.svg">
+              <div>
+                <span class="block text-lg font-medium">Hugo Vaquez</span>
+                <span class="block text-sm text-gray-400 -mt-1">Lambayeque, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
             </div>
-            <div class="ml-auto flex gap-3">
-              <span>4.5</span>
-              <img src="assets/icons/estrella.svg">
-            </div>
+            <p class="text-sm xl:text-base">Súper recomendado, envié un paquete desde NYC a Lima.</p>
           </div>
-          <p class="text-sm xl:text-base">Súper recomendado, envié un paquete desde NYC a Lima.</p>
+          <div data-id="2" class="hidden xl:block testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-2.svg">
+              <div>
+                <span class="block text-lg font-medium">Yessica Castillo</span>
+                <span class="block text-sm text-gray-400 -mt-1">Huancavelica, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Excelente servicio 100% garantizado. muchas gracias.</p>
+          </div>
+          <div data-id="3" class="hidden xl:block testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-3.svg">
+              <div>
+                <span class="block text-lg font-medium">Alex Wong</span>
+                <span class="block text-sm text-gray-400 -mt-1">Lima, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Feliz por la atención, llego a mi casa antes del tiempo y estoy feliz por eso.</p>
+          </div>
         </div>
-        <div data-id="2" class="hidden xl:block testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
-          <div class="flex gap-5 items-center mb-8">
-            <img src="assets/images/user-2.svg">
-            <div>
-              <span class="block text-lg font-medium">Yessica Castillo</span>
-              <span class="block text-sm text-gray-400 -mt-1">Huancavelica, Perú</span>
-            </div>
-            <div class="ml-auto flex gap-3">
-              <span>4.5</span>
-              <img src="assets/icons/estrella.svg">
-            </div>
+        <div class="flex items-center justify-between">
+          <div class="flex gap-4">
+            <span class="py-2 px-6 rounded-2xl bg-main-red"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
           </div>
-          <p class="text-sm xl:text-base">Excelente servicio 100% garantizado. muchas gracias.</p>
-        </div>
-        <div data-id="3" class="hidden xl:block testimony_card border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
-          <div class="flex gap-5 items-center mb-8">
-            <img src="assets/images/user-3.svg">
-            <div>
-              <span class="block text-lg font-medium">Alex Wong</span>
-              <span class="block text-sm text-gray-400 -mt-1">Lima, Perú</span>
-            </div>
-            <div class="ml-auto flex gap-3">
-              <span>4.5</span>
-              <img src="assets/icons/estrella.svg">
-            </div>
+          <div class="flex gap-5">
+            <figure id="arrow-left" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full border-2 border-main-red flex items-center justify-center">
+              <img src="assets/icons/arrow-left-red.svg">
+            </figure>
+            <figure id="arrow-right" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full bg-main-red flex items-center justify-center">
+              <img src="assets/icons/arrow-right-white.svg">
+            </figure>
           </div>
-          <p class="text-sm xl:text-base">Feliz por la atención, llego a mi casa antes del tiempo y estoy feliz por eso.</p>
         </div>
       </div>
-      <div class="flex items-center justify-between">
-        <div class="flex gap-4">
-          <span class="py-2 px-6 rounded-2xl bg-main-red"></span>
-          <span class="w-4 rounded-full bg-gray-200"></span>
-          <span class="w-4 rounded-full bg-gray-200"></span>
-          <span class="w-4 rounded-full bg-gray-200"></span>
+      <!-- SLIDER MOVIL -->
+      <div class="xl:hidden">
+        <div class="relative xl:flex gap-12 mb-16">
+          <div class="opacity-0 border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-colors delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-1.svg">
+              <div>
+                <span class="block text-lg font-medium">Hugo Vaquez</span>
+                <span class="block text-sm text-gray-400 -mt-1">Lambayeque, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Súper recomendado, envié un paquete desde NYC a Lima.</p>
+          </div>
+          <div data-id="1" class="absolute inset-x-0 top-0 testimony_card--active--mobile testimony_card--mobile opacity-0 border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-all delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-1.svg">
+              <div>
+                <span class="block text-lg font-medium">Hugo Vaquez</span>
+                <span class="block text-sm text-gray-400 -mt-1">Lambayeque, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Súper recomendado, envié un paquete desde NYC a Lima.</p>
+          </div>
+          <div data-id="2" class="absolute inset-x-0 top-0 testimony_card--mobile opacity-0 border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-all delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-2.svg">
+              <div>
+                <span class="block text-lg font-medium">Yessica Castillo</span>
+                <span class="block text-sm text-gray-400 -mt-1">Huancavelica, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Excelente servicio 100% garantizado. muchas gracias.</p>
+          </div>
+          <div data-id="3" class="absolute inset-x-0 top-0 testimony_card--mobile opacity-0 border-2 hover:bg-white hover:border-main-red hover:shadow-xl rounded-xl p-5 xl:p-7 pb-12 w-full xl:w-1/3 transition-all delay-400 cursor-pointer">
+            <div class="flex gap-5 items-center mb-8">
+              <img src="assets/images/user-3.svg">
+              <div>
+                <span class="block text-lg font-medium">Alex Wong</span>
+                <span class="block text-sm text-gray-400 -mt-1">Lima, Perú</span>
+              </div>
+              <div class="ml-auto flex gap-3">
+                <span>4.5</span>
+                <img src="assets/icons/estrella.svg">
+              </div>
+            </div>
+            <p class="text-sm xl:text-base">Feliz por la atención, llego a mi casa antes del tiempo y estoy feliz por eso.</p>
+          </div>
         </div>
-        <div class="flex gap-5">
-          <figure id="arrow-left" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full border-2 border-main-red flex items-center justify-center">
-            <img src="assets/icons/arrow-left-red.svg">
-          </figure>
-          <figure id="arrow-right" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full bg-main-red flex items-center justify-center">
-            <img src="assets/icons/arrow-right-white.svg">
-          </figure>
+        <div class="flex items-center justify-between">
+          <div class="flex gap-4">
+            <span class="py-2 px-6 rounded-2xl bg-main-red"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
+            <span class="w-4 rounded-full bg-gray-200"></span>
+          </div>
+          <div class="flex gap-5">
+            <figure id="arrow-left--mobile" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full border-2 border-main-red flex items-center justify-center">
+              <img src="assets/icons/arrow-left-red.svg">
+            </figure>
+            <figure id="arrow-right--mobile" class="cursor-pointer w-8 xl:w-12 h-8 xl:h-12 p-2 rounded-full bg-main-red flex items-center justify-center">
+              <img src="assets/icons/arrow-right-white.svg">
+            </figure>
+          </div>
         </div>
       </div>
     </article>
@@ -579,6 +659,31 @@
         : cards[activo + 1].classList.add('testimony_card--active')
     })
   
+    // FUNCIONALIDAD PARA LAS FLECHAS EN MOBILE
+    const arrowLeftMobile = document.getElementById('arrow-left--mobile'),
+      arrowRightMobile = document.getElementById('arrow-right--mobile'),
+      cardsMobile = [...document.querySelectorAll('.testimony_card--mobile')]
+
+    arrowLeftMobile.addEventListener('click', () => {
+      let maximo = cardsMobile.length - 1
+      let activo = parseInt(document.querySelector('.testimony_card--active--mobile').dataset.id) - 1
+
+      cardsMobile[activo].classList.remove('testimony_card--active--mobile')
+      activo - 1 < 0
+        ? cardsMobile[maximo].classList.add('testimony_card--active--mobile')
+        : cardsMobile[activo - 1].classList.add('testimony_card--active--mobile')
+    })
+
+    arrowRightMobile.addEventListener('click', () => {
+      let maximo = cardsMobile.length - 1
+      let activo = parseInt(document.querySelector('.testimony_card--active--mobile').dataset.id) - 1
+
+      cardsMobile[activo].classList.remove('testimony_card--active--mobile')
+      activo + 1 > maximo
+        ? cardsMobile[0].classList.add('testimony_card--active--mobile')
+        : cardsMobile[activo + 1].classList.add('testimony_card--active--mobile')
+    })
+
     // FUNCIONALIDAD LA HACER CLICK EN UNA CARD
     const handleClick = card => {
       cards.map(cardTestimony => cardTestimony.classList.remove('testimony_card--active'))
