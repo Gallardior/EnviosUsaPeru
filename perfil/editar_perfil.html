@@ -47,8 +47,11 @@
         <h3 class="xl:hidden text-4xl font-bold text-black mb-12">Editar Perfil</h3>
         <div class="xl:py-10">
           <figure class="mx-auto w-48 relative">
-            <img src="../assets/images/user-default.svg" class="object-cover w-full rounded-full shadow-md">
-            <img src="../assets/icons/camara-circle.svg" class="absolute bottom-0 right-0 cursor-pointer">
+            <img id="imagen_preview" src="../assets/images/user-default.svg" class="object-cover w-full h-48 rounded-full shadow-md">
+            <label class="cursor-pointer" for="imagen_perfil">
+              <img class="absolute bottom-0 right-0 cursor-pointer" src="../assets/icons/camara-circle.svg">
+              <input type="file" name="" id="imagen_perfil" class="hidden">
+            </label>
           </figure>
         </div>
         <div class="hidden xl:block py-12 bg-bg-black rounded-2xl text-lg text-white font-bold">
@@ -267,6 +270,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // SCRIPT PARA MOSTRAR PREVIEW
+    const imagenPerfil = document.getElementById('imagen_perfil')
+    imagenPerfil.onchange = function (e) {
+      // Crear el FilReader
+      let reader = new FileReader()
+      // Leer el archivo subido
+      reader.readAsDataURL(imagenPerfil.files[0])
+
+      // Callback que ejecutara al cargar la imagen
+      reader.onload = function () {
+        let image = document.getElementById('imagen_preview')
+        image.setAttribute('src', reader.result)
+      }
+    }
+  </script>
 </body>
   
 </html>
