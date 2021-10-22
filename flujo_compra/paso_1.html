@@ -18,7 +18,7 @@
 <body>
   <!-- HEADER -->
   <header class="u-container py-3 xl:py-5 flex items-center justify-between">
-    <a href="#" class="hidden xl:block">
+    <a href="#">
       <figure>
         <img src="../assets/LOGO.svg" class="w-24 xl:w-auto">
       </figure>
@@ -27,14 +27,17 @@
     <nav class="hidden xl:flex items-center gap-10">
       <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
       <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
-      <a href="#" class="font-medium text-black">Iniciar sesíon</a>
-      <a href="#"
-        class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</a>
+      <!-- Sin sesión iniciada -->
+      <button id="login-btn" class="hidden font-medium text-black">Iniciar sesíon</button>
+      <button id="register-btn" class="hidden font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</button>
+      <!-- Con sesión iniciada -->
+      <div class="h-12 border-r shadow-sm"></div>
+      <div class="flex items-center gap-5 cursor-pointer">
+        <button class="font-bold">Javier De la Cruz</button>
+        <img class="w-14 h-14 rounded-full border shadow-sm" src="../assets/images/user-1.svg">
+      </div>
     </nav>
-
-    <img src="../assets/icons/back.svg" class="xl:hidden cursor-pointer">
-    <h2 class="font-semibold text-sm mt-1 xl:hidden cursor-pointer">Envíos Usa Perú</h2>
-    <img class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
+    <img id="menu-btm" class="xl:hidden cursor-pointer" src="../assets/icons/menu.svg">
   </header>
 
   <!-- TIPO DE MONEDA -->

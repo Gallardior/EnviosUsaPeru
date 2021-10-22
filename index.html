@@ -17,8 +17,8 @@
 
 <body>
 
-  <!-- MENU -->
-  <div id="menu" class="oculto fixed h-screen inset-0 z-50 bg-black bg-opacity-50 transition-opacity delay-400">
+  <!-- MENU CON SESION INICIADA-->
+  <div id="" class="oculto fixed h-screen inset-0 z-50 bg-black bg-opacity-50 transition-opacity delay-400">
     <div class="h-full bg-gray-100 py-2 px-7 ml-auto w-80 flex flex-col justify-between overflow-y-scroll xl:overflow-hidden">
       <div>
 
@@ -98,7 +98,75 @@
       </div>
     </div>
   </div>
+  <!-- MENU SIN SEION INICIADA-->
+  <div id="menu" class="oculto fixed h-screen inset-0 z-50 bg-black bg-opacity-50 transition-opacity delay-400">
+    <div class="h-full bg-gray-100 py-2 px-7 ml-auto w-80 flex flex-col justify-between overflow-y-scroll xl:overflow-hidden">
+      <div>
 
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="rounded-2xl p-3 pr-5 bg-bg-black flex items-center justify-between">
+            <img src="assets/images/user-default.svg" class="mr-3 w-10 h-10 rounded-full object-cover">
+            <div class="w-full flex items-center justify-between">
+              <span class="font-semibold text-white">Invitado</span>
+              <img class="cursor-pointer" src="assets/icons/drop-down-white.svg">
+            </div>
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7">
+            <span class="block cursor-pointer">Iniciar sesión</span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="block cursor-pointer">Registrarse</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="border-b-2 shadow-sm rounded-2xl py-6 px-7 pr-4 text-sm font-semibold bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Moneda:</span>
+            <div class="w-full flex items-center justify-between">
+              <span class="font-semibold text-main-red">Dólares (USD)</span>
+              <img class="cursor-pointer" src="assets/icons/drop-down-gray.svg">
+            </div>
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7 pr-4">
+            <span class="flex items-center">
+              <img class="mr-5" src="assets/icons/bandera-usa.svg">
+              <div class="flex justify-between w-full">
+                <span>
+                  <span class="block text-sm font-semibold text-black">Dólares (USD)</span>
+                  <span class="text-xs font-normal">Compra: 4.09 Venta: 4.10</span>
+                </span>
+                <img class="cursor-pointer" src="assets/icons/check.svg">
+              </div>
+            </span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="flex items-center">
+              <img class="mr-5" src="assets/icons/bandera-peru.svg">
+              <span>Soles (PEN)</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hidden rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="border-b-2 shadow-sm rounded-2xl py-6 px-7 pr-4 text-sm bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Nuestros Servicios</span>
+            <img class="cursor-pointer" src="assets/icons/drop-down-gray.svg">
+          </div>
+          <div class="bg-white text-gray-400 text-sm py-4 px-7">
+            <span class="block">Servicio Courier</span>
+            <hr class="bg-gray-200 mt-3 mb-5">
+            <span class="block">Servicio Shopper</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border shadow-sm mb-4 bg-white overflow-hidden">
+          <div class="py-6 px-7 pr-4 text-sm bg-white flex items-center justify-between">
+            <span class="font-semibold mr-4">Tracking</span>
+            <img class="cursor-pointer" src="assets/icons/drop-right-gray.svg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!-- LOGIN -->
   <div id="login" class="oculto fixed h-screen inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center transition-opacity delay-400">
     <div class="bg-gray-100 px-8 grid items-center justify-center w-full h-full xl:w-auto xl:h-auto xl:py-24 xl:px-32 xl:rounded-2xl relative">
@@ -221,8 +289,15 @@
     <nav class="hidden xl:flex items-center gap-10">
       <a href="#" class="hover:text-black hover:font-medium transition-all">Tracking</a>
       <a href="#" class="hover:text-black hover:font-medium transition-all">Compra desde USA</a>
+      <!-- Sin sesión iniciada -->
       <button id="login-btn" class="font-medium text-black">Iniciar sesíon</button>
       <button id="register-btn" class="font-medium py-2 px-7 border border-main-red rounded-3xl text-main-red hover:shadow-lg transition-all">Registrarse</button>
+      <!-- Con sesión iniciada -->
+      <div class="hidden h-12 border-r shadow-sm"></div>
+      <div class="hidden flex items-center gap-5 cursor-pointer">
+        <button class="font-bold">Javier De la Cruz</button>
+        <img class="w-14 h-14 rounded-full border shadow-sm" src="assets/images/user-1.svg">
+      </div>
     </nav>
     <img id="menu-btm" class="xl:hidden cursor-pointer" src="assets/icons/menu.svg">
   </header>
