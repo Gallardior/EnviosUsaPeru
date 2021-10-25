@@ -154,8 +154,17 @@
                 value="300.00"
               >
               <span class="absolute bottom-2 left-6 text-xs text-gray-400">Precio Max. USD 3000.00</span>
-              <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center font-bold text-main-red">
-                <img src="../assets/icons/question.svg">
+              <div class="cursor-pointer absolute right-6 inset-y-0 flex items-center text-main-red">
+                <img id="popup-btn" src="../assets/icons/question.svg">
+
+                <!-- POP UP -->
+                <div class="z-10 absolute -top-16 xl:-top-20 -right-14 xl:-right-32 bg-main-red text-white text-xs xl:text-sm text-center p-4 rounded-2xl w-max transition-all delay-400">
+                  Si el precio de tu producto excede el valor máximo,
+                  <span class="block">
+                    comunícate con atención al cliente para poder ayudarte
+                  </span>
+                  <span class="absolute -bottom-7 right-10 xl:right-28 w-14 h-8 triangle bg-main-red"></span>
+                </div>
               </div>
             </label>
             <label class="relative block mb-8">
